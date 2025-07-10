@@ -1,0 +1,721 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us | Youth Empowerment</title>
+
+  <meta name="description" content="Get in touch with Youth Empowerment Madagascar. Reach out via email, visit us at our location, or follow us on social media to join the movement.">
+  <meta name="keywords" content="Contact Youth Empowerment Madagascar, youth organization Madagascar, NGO, get in touch, email, location, social media">
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="Youth Empowerment Madagascar">
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+
+  <style>
+  body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #1f1f1f;
+    color: #f0f0f0;
+  }
+
+  header {
+    background-color: #2a2a2a;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    flex-wrap: wrap;
+    position: relative;
+    z-index: 1000;
+  }
+
+  .logo-container {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #ffffff;
+    margin-bottom: 0.5rem;
+  }
+
+  .logo-container img {
+    height: 40px;
+    margin-right: 8px;
+  }
+
+  .logo-container span {
+    font-size: 1.2rem;
+    font-weight: 700;
+  }
+
+  nav {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    position: relative;
+  }
+
+  .nav-item {
+    position: relative;
+    font-weight: 600;
+    color: #f0f0f0;
+    cursor: pointer;
+  }
+
+  .nav-item a {
+    text-decoration: none;
+    color: #f0f0f0;
+  }
+
+  .dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #3a3a3a;
+    padding: 0.5rem 1rem;
+    min-width: 220px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    z-index: 999;
+  }
+
+  .dropdown a {
+    display: block;
+    color: #f0f0f0;
+    padding: 0.4rem 0;
+    text-decoration: none;
+    font-weight: 600;
+    white-space: nowrap;
+  }
+
+  .dropdown a:hover {
+    text-decoration: underline;
+  }
+
+  .donate-btn {
+    background-color: #f44336;
+    color: white;
+    padding: 0.5rem 1.2rem;
+    border: none;
+    border-radius: 999px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+
+  .hamburger {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 24px;
+    height: 18px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    margin: 0;
+  }
+
+  .hamburger .bar {
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: #fff;
+    border-radius: 2px;
+  }
+
+  section#contact {
+    padding: 4rem 2rem;
+    background-color: #1f1f1f;
+  }
+
+  .contact-hero {
+    max-width: 1000px;
+    margin: auto;
+    text-align: center;
+  }
+
+  .contact-hero img {
+    width: 100%;
+    max-width: 800px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.4);
+    margin-bottom: 2rem;
+  }
+
+  .contact-hero h2 {
+    color: #FFD700;
+    font-size: 2.2rem;
+    margin-bottom: 1rem;
+  }
+
+  .contact-hero p {
+    color: #f0f0f0;
+    margin-bottom: 2.5rem;
+  }
+
+  .contact-form {
+    max-width: 800px;
+    margin: auto;
+    background-color: #2a2a2a;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+  }
+
+  .form-row {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+
+  .form-group {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.5rem;
+  }
+
+  .form-group label {
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+  }
+
+  .form-group input,
+  .form-group textarea {
+    padding: 0.8rem 1rem;
+    border: none;
+    border-radius: 10px;
+    font-size: 1rem;
+    background-color: #fff;
+    color: #111;
+  }
+
+  .form-group textarea {
+    resize: vertical;
+  }
+
+  .contact-form button {
+    background-color: #990033;
+    color: white;
+    padding: 0.8rem 2rem;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s;
+  }
+
+  .contact-form button:hover {
+    background-color: #cc0044;
+  }
+
+  footer {
+    background-color: #2a2a2a;
+    color: #f0f0f0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 2rem;
+    text-align: center;
+  }
+
+  .footer-column {
+    flex: 1 1 300px;
+    margin: 1rem;
+  }
+
+  .footer-column h3 {
+    color: #990033;
+    margin-bottom: 1rem;
+  }
+
+  .footer-column p,
+  .footer-column li,
+  .footer-column a {
+    font-size: 1rem;
+    color: #f0f0f0;
+    margin: 0.5rem 0;
+    text-decoration: none;
+  }
+
+  .footer-column ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  .social-icon {
+    width: 50px;
+    margin: 0.5rem 0;
+  }
+
+  @media (max-width: 768px) {
+    .hamburger {
+      display: flex;
+      position: absolute;
+      top: 1rem;
+      right: 1.5rem;
+      z-index: 1100;
+    }
+
+    #navMenu {
+      display: none;
+      flex-direction: column;
+      width: 100%;
+      background-color: #2a2a2a;
+      padding: 1rem 0;
+      align-items: flex-start;
+      padding-left: 1.5rem;
+    }
+
+    #navMenu.show {
+      display: flex !important;
+    }
+
+    .nav-item {
+      width: 100%;
+      padding: 0.5rem 0;
+    }
+
+    .nav-item .dropdown {
+      position: static;
+      background: none;
+      padding-left: 1rem;
+      box-shadow: none;
+    }
+
+    .donate-btn {
+      align-self: flex-start;
+      margin-left: 0;
+      margin-top: 1rem;
+    }
+  }
+</style>
+
+</head>
+<body>
+
+<header>
+  <a href="index.html" class="logo-container" style="text-decoration: none;">
+    <img src="logo.png" alt="Youth Empowerment Logo" />
+    <span>Youth Empowerment</span>
+  </a>
+  <button class="hamburger" onclick="toggleMenu()" aria-label="Toggle menu">☰</button>
+
+
+<nav id="navMenu">
+
+    <div class="nav-item">
+      <a href="index.html">Home ▼</a>
+      <div class="dropdown">
+        <a href="index.html#about">About Us</a>
+        <a href="index.html#mission">Mission & Values</a>
+        <a href="index.html#board">Board Members</a>
+        <a href="index.html#president">President's Message</a>
+      </div>
+    </div>
+
+    <div class="nav-item">
+      <a href="changemakers.html">Our Changemakers ▼</a>
+      <div class="dropdown">
+        <a href="changemakers.html#champions">Our Champions</a>
+        <a href="changemakers.html#volunteers">Our Changemakers</a>
+      </div>
+    </div>
+
+    <div class="nav-item">
+      <a href="projects.html">Our Projects ▼</a>
+      <div class="dropdown">
+        <a href="projects.html#projects-by-youth">Project By Youth</a>
+        <a href="projects.html#projects-for-youth">Project For Youth</a>
+      </div>
+    </div>
+
+    <div class="nav-item"><a href="news.html">News</a></div>
+    <div class="nav-item"><a href="contact.html">Contact</a></div>
+    <div class="nav-item"><a href="donate.html" class="donate-btn">Donate</a></div>
+    
+  </nav>
+</header>
+<style>
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: #1f1f1f;
+  color: #f0f0f0;
+}
+
+header {
+  background-color: #2a2a2a;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  flex-wrap: wrap;
+  position: relative;
+  z-index: 1000;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #ffffff;
+  margin-bottom: 0.5rem;
+}
+
+.logo-container img {
+  height: 40px;
+  margin-right: 8px;
+}
+
+.logo-container span {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  position: relative;
+}
+
+.nav-item {
+  position: relative;
+  font-weight: 600;
+  color: #f0f0f0;
+  cursor: pointer;
+}
+
+.nav-item a {
+  text-decoration: none;
+  color: #f0f0f0;
+}
+
+.dropdown {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #3a3a3a;
+  padding: 0.5rem 1rem;
+  min-width: 220px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+  z-index: 999;
+}
+
+.dropdown a {
+  display: block;
+  color: #f0f0f0;
+  padding: 0.4rem 0;
+  text-decoration: none;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.dropdown a:hover {
+  text-decoration: underline;
+}
+
+.donate-btn {
+  background-color: #f44336;
+  color: white;
+  padding: 0.5rem 1.2rem;
+  border: none;
+  border-radius: 999px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.hamburger {
+  display: none;
+  font-size: 1.8rem;
+  background: none;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* CONTACT PAGE SECTIONS */
+section#contact {
+  padding: 4rem 2rem;
+  background-color: #1f1f1f;
+}
+
+.contact-hero {
+  max-width: 1000px;
+  margin: auto;
+  text-align: center;
+}
+
+.contact-hero img {
+  width: 100%;
+  max-width: 800px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.4);
+  margin-bottom: 2rem;
+}
+
+.contact-hero h2 {
+  color: #FFD700;
+  font-size: 2.2rem;
+  margin-bottom: 1rem;
+}
+
+.contact-hero p {
+  color: #f0f0f0;
+  margin-bottom: 2.5rem;
+}
+
+.contact-form {
+  max-width: 800px;
+  margin: auto;
+  background-color: #2a2a2a;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+}
+
+.form-row {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.form-group {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1.5rem;
+}
+
+.form-group label {
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.form-group input,
+.form-group textarea {
+  padding: 0.8rem 1rem;
+  border: none;
+  border-radius: 10px;
+  font-size: 1rem;
+  background-color: #fff;
+  color: #111;
+}
+
+.form-group textarea {
+  resize: vertical;
+}
+
+.contact-form button {
+  background-color: #990033;
+  color: white;
+  padding: 0.8rem 2rem;
+  font-size: 1.1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  width: 100%;
+  transition: background-color 0.3s;
+}
+
+.contact-form button:hover {
+  background-color: #cc0044;
+}
+
+/* FOOTER */
+footer {
+  background-color: #2a2a2a;
+  color: #f0f0f0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 2rem;
+  text-align: center;
+}
+
+.footer-column {
+  flex: 1 1 300px;
+  margin: 1rem;
+}
+
+.footer-column h3 {
+  color: #990033;
+  margin-bottom: 1rem;
+}
+
+.footer-column p,
+.footer-column li,
+.footer-column a {
+  font-size: 1rem;
+  color: #f0f0f0;
+  margin: 0.5rem 0;
+  text-decoration: none;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.social-icon {
+  width: 50px;
+  margin: 0.5rem 0;
+}
+
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+    position: absolute;
+    top: 1rem;
+    right: 1.5rem;
+    z-index: 1100;
+  }
+
+  #navMenu {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background-color: #2a2a2a;
+    padding: 1rem 0;
+    align-items: flex-start;
+    padding-left: 1.5rem;
+  }
+
+  #navMenu.show {
+    display: flex !important;
+  }
+
+  .nav-item {
+    width: 100%;
+    padding: 0.5rem 0;
+  }
+
+  .nav-item .dropdown {
+    position: static;
+    background: none;
+    padding-left: 1rem;
+    box-shadow: none;
+  }
+
+  .donate-btn {
+    align-self: flex-start;
+    margin-left: 0;
+    margin-top: 1rem;
+  }
+}
+
+</style>
+
+<section id="contact">
+  <div class="contact-hero">
+    <img src="contact-banner.jpg" loading="lazy" alt="Contact Illustration">
+    <h2>Send Us a Message</h2>
+    <p>Have questions, ideas, or want to collaborate? We’d love to hear from you.</p>
+  </div>
+</section>
+
+
+<form id="contact-form" class="contact-form" style="margin-bottom: 4rem;">
+  <div class="form-row">
+    <div class="form-group">
+      <label>First Name</label>
+      <input type="text" name="first-name" required>
+    </div>
+    <div class="form-group">
+      <label>Last Name</label>
+      <input type="text" name="last-name" required>
+    </div>
+  </div>
+  <div class="form-group">
+    <label>Email</label>
+    <input type="email" name="email" required>
+  </div>
+  <div class="form-group">
+    <label>Message</label>
+    <textarea name="message" rows="5" required></textarea>
+  </div>
+  <button type="submit">Submit</button>
+  <p id="form-status" style="margin-top: 1rem; font-weight: bold;"></p>
+</form>
+
+</section>
+
+<!-- Footer -->
+<footer>
+  <div class="footer-column">
+    <h3>Follow our Journey</h3>
+    <a href="https://www.facebook.com/share/1Bpx24zMcb/?mibextid=wwXIfr" target="_blank">
+      <img src="facebook-icon.png" alt="Facebook" class="social-icon">
+    </a>
+    <h3>Contact Information</h3>
+    <p>youthempowerment.mg@gmail.com</p>
+  </div>
+  
+  <div class="footer-column">
+    <h3>Pages</h3>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="changemakers.html">Our Changemakers</a></li>
+      <li><a href="projects.html">Our Projects</a></li>
+      <li><a href="news.html">News</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="donate.html">Donate</a></li>
+    </ul>
+  </div>
+
+  <div class="footer-column">
+    <h3>Our Location</h3>
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15605.83892138594!2d47.4690628!3d-18.7998729!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x21f07997c361f8e5%3A0xe00f5fcb161c9264!2sIvato%20Airport%20City!5e0!3m2!1sen!2smg!4v1718123456789"
+      width="200" height="150" style="border:0; border-radius: 12px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+    <p>Lot K4-096 Ivato Airport,<br>Antananarivo, Madagascar</p>
+  </div>
+</footer>
+<script>
+    function toggleMenu() {
+    const nav = document.getElementById("navMenu");
+    nav.classList.toggle("show");
+  }
+
+  const form = document.getElementById("contact-form");
+  const status = document.getElementById("form-status");
+
+  form.addEventListener("submit", async function (e) {
+    e.preventDefault();
+
+    const formData = new FormData(form);
+    const data = Object.fromEntries(formData.entries());
+
+    try {
+      const response = await fetch("https://formspree.io/f/mwpbavkp", {
+        method: "POST",
+        headers: {
+          Accept: "application/json",
+        },
+        body: formData,
+      });
+
+      if (response.ok) {
+        form.reset();
+        status.style.color = "lightgreen";
+        status.textContent = "Thank you! Your message has been sent.";
+      } else {
+        throw new Error("Form submission failed.");
+      }
+    } catch (error) {
+      status.style.color = "tomato";
+      status.textContent = "Oops! Something went wrong. Please try again later.";
+    }
+  });
+</script>
+
+
+</body>
+</html>

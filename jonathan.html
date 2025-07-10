@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Jonathan Ramiaramanana</title>
+  <meta name="description" content="Discover Jonathan Ramiaramanana, a changemaker at Youth Empowerment Madagascar dedicated to inspiring youth and advancing impactful community initiatives.">
+  <meta name="keywords" content="Jonathan Ramiaramanana, Youth Empowerment Madagascar, changemaker, youth, Madagascar, leadership, empowerment, social impact">
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="Youth Empowerment Madagascar">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background-color: #1f1f1f;
+      color: #f0f0f0;
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: #2a2a2a;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1rem 2rem;
+    }
+
+    .logo-container {
+      display: flex;
+      align-items: center;
+      text-decoration: none;
+    }
+
+    .logo-container img {
+      height: 60px;
+      margin-right: 10px;
+    }
+
+    .logo-container span {
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: #ffffff;
+    }
+
+    .profile-container {
+      max-width: 900px;
+      margin: 60px auto;
+      padding: 0 20px;
+    }
+
+    .profile-header {
+      text-align: center;
+    }
+
+    .profile-header img {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 1rem;
+      border: 4px solid #f0f0f0;
+    }
+
+    .profile-header h1 {
+      font-size: 1.8rem;
+      color: #ffffff;
+      margin-bottom: 0.5rem;
+      line-height: 1.4;
+    }
+
+    .profile-header h3 {
+      font-weight: 400;
+      color: #f0f0f0;
+    }
+
+    .profile-content p {
+      margin-bottom: 1.2rem;
+      text-align: justify;
+      color: #e0e0e0;
+      font-size: 1rem;
+    }
+
+    footer {
+      background-color: #2a2a2a;
+      color: #f0f0f0;
+      text-align: center;
+      padding: 2rem;
+      margin-top: 4rem;
+    }
+
+    @media (max-width: 768px) {
+      header {
+        padding: 0.8rem 1rem;
+        flex-direction: row;
+        justify-content: flex-start;
+      }
+
+      .logo-container {
+        display: flex;
+        align-items: center;
+        gap: 0.4rem;
+      }
+
+      .logo-container img {
+        height: 40px;
+        margin-right: 8px;
+      }
+
+      .logo-container span {
+        font-size: 1.1rem;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+
+      .profile-header img {
+        width: 150px;
+        height: 150px;
+      }
+
+      .profile-header h1 {
+        font-size: 1.4rem;
+        padding: 0 1rem;
+      }
+
+      .profile-content p {
+        font-size: 0.95rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <a href="index.html" class="logo-container" style="text-decoration: none;">
+      <img src="logo.png" alt="Youth Empowerment Logo" />
+      <span>Youth Empowerment</span>
+    </a>
+  </header>
+
+  <section class="profile-container">
+    <div class="profile-header">
+      <img src="changemaker6.jpg" alt="JONATHAN RAMIARAMANANA" style="width: 150px; height: 150px; border-radius: 50%; border: 4px solid #f0f0f0; object-fit: cover; object-position: center top; margin-bottom: 1rem;">
+      <h1>Jonathan Ramiaramanana</h1>
+    </div>
+    <div class="profile-content">
+      <p>Born on May 6, 2002 in Toamasina, Madagascar, Jonathan Ramiaramanana is a young talent from the coastal region who stands out for his bold temperament, rigor, and dynamism. Passionate about cooking, he aspires to become a great chef and maintains a deep love for literature.</p>
+
+      <p>After obtaining his baccalaureate, Jonathan pursued law studies at the University of Antananarivo. However, due to family circumstances, he courageously suspended his second year to pursue a new path.</p>
+
+      <p>He completed modular training in office computing and earned a recognized certificate. Simultaneously, he nurtured his artistic side by participating in a theater group. In 2022, he was selected as a radio actor, marking a new milestone in his creative journey.</p>
+
+      <p>Jonathan later began working in remote monitoring while continuing his active job search. His professional goals include achieving financial independence, securing a stable, well-paid job, and eventually starting his own business to create job opportunities for others.</p>
+
+      <p>His generosity and altruism drive his community-oriented ambitions. Guided by his personal motto:</p>
+      <p style="text-align: center; font-style: italic;">"Everything is possible for those who dream, dare, work and never give up."</p>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Youth Empowerment Madagascar. All rights reserved.</p>
+  </footer>
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const params = new URLSearchParams(window.location.search);
+    const slide = params.get("slide");
+    const backLink = document.getElementById("backToChangemakers");
+    if (backLink && slide !== null) {
+      backLink.href = `changemakers.html?slide=${slide}#volunteers`;
+    }
+  });
+</script>
+
+</body>
+</html>
