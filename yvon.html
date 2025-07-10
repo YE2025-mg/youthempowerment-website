@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Fanasimptiavana Andrinajoro Yvon</title>
+  <meta name="description" content="Discover Fanasimptiavana Andrinajoro Yvon, a changemaker at Youth Empowerment Madagascar working to uplift youth through innovation, service, and leadership.">
+  <meta name="keywords" content="Fanasimptiavana Andrinajoro Yvon, Youth Empowerment Madagascar, changemaker, youth, Madagascar, empowerment, leadership, development">
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="Youth Empowerment Madagascar">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background-color: #1f1f1f;
+      color: #f0f0f0;
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: #2a2a2a;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1rem 2rem;
+    }
+
+    .logo-container {
+      display: flex;
+      align-items: center;
+      text-decoration: none;
+    }
+
+    .logo-container img {
+      height: 60px;
+      margin-right: 10px;
+    }
+
+    .logo-container span {
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: #ffffff;
+    }
+
+    .profile-container {
+      max-width: 900px;
+      margin: 60px auto;
+      padding: 0 20px;
+    }
+
+    .profile-header {
+      text-align: center;
+    }
+
+    .profile-header img {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 1rem;
+      border: 4px solid #f0f0f0;
+    }
+
+    .profile-header h1 {
+      font-size: 1.8rem;
+      color: #ffffff;
+      margin-bottom: 0.5rem;
+      line-height: 1.4;
+    }
+
+    .profile-header h3 {
+      font-weight: 400;
+      color: #f0f0f0;
+    }
+
+    .profile-content p {
+      margin-bottom: 1.2rem;
+      text-align: justify;
+      color: #e0e0e0;
+      font-size: 1rem;
+    }
+
+    footer {
+      background-color: #2a2a2a;
+      color: #f0f0f0;
+      text-align: center;
+      padding: 2rem;
+      margin-top: 4rem;
+    }
+
+    @media (max-width: 768px) {
+      header {
+        padding: 0.8rem 1rem;
+        flex-direction: row;
+        justify-content: flex-start;
+      }
+
+      .logo-container {
+        display: flex;
+        align-items: center;
+        gap: 0.4rem;
+      }
+
+      .logo-container img {
+        height: 40px;
+        margin-right: 8px;
+      }
+
+      .logo-container span {
+        font-size: 1.1rem;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+
+      .profile-header img {
+        width: 150px;
+        height: 150px;
+      }
+
+      .profile-header h1 {
+        font-size: 1.4rem;
+        padding: 0 1rem;
+      }
+
+      .profile-content p {
+        font-size: 0.95rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+<a href="index.html" class="logo-container" style="text-decoration: none;">
+  <img src="logo.png" alt="Youth Empowerment Logo" />
+  <span>Youth Empowerment</span>
+</a>
+</header>
+
+<section class="profile-container">
+  <div class="profile-header">
+    <img src="yvon.jpg" alt="Fanasimptiavana Andrinajoro Yvon">
+    <h1>Fanasimptiavana Andrinajoro Yvon</h1>
+  </div>
+
+  <div class="profile-content">
+    <p>Fanasimptiavana Andrinajoro Yvon is a rigorous, responsible young man who is passionate about learning and personal development. Since a young age, he has always sought to deepen his knowledge and improve his skills, convinced that hard work and perseverance are the keys to success.</p>
+
+    <p>He obtained his Technical Baccalaureate in Civil Engineering in 2022 and has undertaken specialized training in AutoCAD, electricity, plumbing, and construction site management. Through these trainings, he acquired skills in drafting plans and projects, reading technical diagrams, structural calculations, and construction site supervision.</p>
+
+    <p>He also has diverse experience, having worked as a salesperson, which helped him sharpen his communication and customer relationship management skills. As an electrician and plumber, he strengthened his knowledge in installing and maintaining electrical and sanitary systems. His internship in site management and supervision provided him with solid experience in team coordination, quality control, and overall construction project management.</p>
+
+    <p>Today, he is a member of Youth Empowerment and a project leader, actively involved in the development and support of young people through initiatives focused on skills acquisition and entrepreneurship.</p>
+
+    <p>Always eager to learn, he is proficient in using technical software such as AutoCAD and is capable of organizing and supervising work across various fields. He firmly believes that success results from consistent effort, continuous learning, and the ability to adapt to changes in the professional world.</p>
+
+    <p><strong>His message:</strong> "Never rest on your achievements, but always strive to grow, because he who stops learning begins to fall behind."</p>
+  </div>
+</section>
+
+<footer>
+  <p>&copy; 2025 Youth Empowerment Madagascar. All rights reserved.</p>
+</footer>
+<script>
+  const params = new URLSearchParams(window.location.search);
+  const slide = params.get('slide') || 0;
+  const backLink = document.getElementById("backLink");
+  backLink.href = `changemakers.html?slide=${slide}#volunteers`;
+</script>
+
+</body>
+</html>

@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sarat Rasoanomenjanahary</title>
+  <meta name="description" content="Learn about Sarat Rasoanomenjanahary, a changemaker at Youth Empowerment Madagascar dedicated to leading projects that empower and uplift young people across communities.">
+  <meta name="keywords" content="Sarat Rasoanomenjanahary, Youth Empowerment Madagascar, changemaker, youth, Madagascar, empowerment, leadership, development">
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="Youth Empowerment Madagascar">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background-color: #1f1f1f;
+      color: #f0f0f0;
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: #2a2a2a;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1rem 2rem;
+    }
+
+    .logo-container {
+      display: flex;
+      align-items: center;
+      text-decoration: none;
+    }
+
+    .logo-container img {
+      height: 60px;
+      margin-right: 10px;
+    }
+
+    .logo-container span {
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: #ffffff;
+    }
+
+    .profile-container {
+      max-width: 900px;
+      margin: 60px auto;
+      padding: 0 20px;
+    }
+
+    .profile-header {
+      text-align: center;
+    }
+
+    .profile-header img {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 1rem;
+      border: 4px solid #f0f0f0;
+    }
+
+    .profile-header h1 {
+      font-size: 1.8rem;
+      color: #ffffff;
+      margin-bottom: 0.5rem;
+      line-height: 1.4;
+    }
+
+    .profile-header h3 {
+      font-weight: 400;
+      color: #f0f0f0;
+    }
+
+    .profile-content p {
+      margin-bottom: 1.2rem;
+      text-align: justify;
+      color: #e0e0e0;
+      font-size: 1rem;
+    }
+
+    footer {
+      background-color: #2a2a2a;
+      color: #f0f0f0;
+      text-align: center;
+      padding: 2rem;
+      margin-top: 4rem;
+    }
+
+    @media (max-width: 768px) {
+      header {
+        padding: 0.8rem 1rem;
+        flex-direction: row;
+        justify-content: flex-start;
+      }
+
+      .logo-container {
+        display: flex;
+        align-items: center;
+        gap: 0.4rem;
+      }
+
+      .logo-container img {
+        height: 40px;
+        margin-right: 8px;
+      }
+
+      .logo-container span {
+        font-size: 1.1rem;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+
+      .profile-header img {
+        width: 150px;
+        height: 150px;
+      }
+
+      .profile-header h1 {
+        font-size: 1.4rem;
+        padding: 0 1rem;
+      }
+
+      .profile-content p {
+        font-size: 0.95rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <a href="index.html" class="logo-container" style="text-decoration: none;">
+      <img src="logo.png" alt="Youth Empowerment Logo" />
+      <span>Youth Empowerment</span>
+    </a>
+  </header>
+
+  <section class="profile-container">
+    <div class="profile-header">
+      <img src="changemaker1.jpg" alt="Sarat Rasoanomenjanahary">
+      <h1>Sarat Rasoanomenjanahary</h1>
+    </div>
+
+
+    <div class="profile-content">
+      <p>Born in Ambalavao, in the Fianarantsoa region, Sarat Rasoanomenjanahary grew up in the countryside within a modest family. As a child, she long struggled with a complex linked to her environment but also drew strength from this experience to push herself further. From an early age, she understood that life was not easy. Her parents, although not wealthy, always fought to ensure she lacked nothing and could continue her education.</p>
+      <p>In 2003, her family left the countryside to settle in Antananarivo, the capital. This move marked a turning point in her life. Driven by the dream of becoming someone and rising above her condition, she fully committed herself to her studies. After obtaining her baccalaureate, she had to learn to fend for herself to finance her higher education: small jobs, sacrifices, perseverance... Nothing was easy, but she never gave up.</p>
+      <p>In 2023, all these efforts paid off: she earned a master’s degree in business law. This diploma opened new doors, both in the legal field and in the associative world, which she holds particularly dear.</p>
+      <p>To overcome her shyness and surpass her complexes, she got involved in several associations. These experiences allowed her to meet new people, expand her network, and above all, gain confidence. Among them, Youth Empowerment holds a special place: it is an innovative association that encourages project creation. She is actively involved in the sports, arts, and culture section, as these are areas she is passionate about and considers essential for giving her country a place on the international stage.</p>
+      <p>Art has always had great importance in her life. Coming from a family of artists, she has been drawing portraits since childhood. Unfortunately, she set this passion aside, influenced by the idea that art was not a promising career.</p>
+      <p>Today, Sarat Rasoanomenjanahary defines herself above all by her perseverance and commitment, whether in the legal field or in promoting culture and art in Madagascar.</p>
+      <p><i>“It is not our origins that define our destiny, but the strength of our dreams and the courage to pursue them.”</i></p>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Youth Empowerment Madagascar. All rights reserved.</p>
+  </footer>
+
+<script>
+  const params = new URLSearchParams(window.location.search);
+  const slide = params.get('slide') || 0;
+  const backLink = document.getElementById("backLink");
+  backLink.href = `changemakers.html?slide=${slide}#volunteers`;
+</script>
+
+
+</body>
+</html>
+

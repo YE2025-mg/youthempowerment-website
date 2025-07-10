@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Our Projects | Youth Empowerment Madagascar</title>
+  <meta name="description" content="Explore impactful youth-led projects at Youth Empowerment Madagascar, where education, innovation, leadership, and community action come together to drive change.">
+  <meta name="keywords" content="Youth Empowerment Madagascar, projects, youth initiatives, community development, leadership, education, Madagascar, changemakers">
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="Youth Empowerment Madagascar">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+
+<style>
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: #1f1f1f;
+  color: #f0f0f0;
+}
+
+header {
+  background-color: #2a2a2a;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1.5rem;
+  flex-wrap: wrap;
+  position: relative;
+  z-index: 1000;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  text-decoration: none;
+}
+
+.logo-container img {
+  height: 40px;
+}
+
+.logo-container span {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #fff;
+}
+
+.hamburger {
+  display: none;
+  font-size: 1.8rem;
+  background: none;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  top: 1rem;
+  right: 1.2rem;
+  z-index: 1100;
+}
+
+#navMenu {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 2rem;
+}
+
+.nav-item {
+  position: relative;
+  font-weight: 600;
+  color: #f0f0f0;
+  cursor: pointer;
+}
+
+.nav-item a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.dropdown {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #3a3a3a;
+  padding: 0.5rem 1rem;
+  min-width: 220px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  z-index: 999;
+}
+
+.dropdown a {
+  display: block;
+  color: #f0f0f0;
+  padding: 0.4rem 0;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.dropdown a:hover {
+  text-decoration: underline;
+}
+
+.nav-item:hover .dropdown {
+  display: block;
+}
+
+.donate-btn {
+  background-color: #f44336;
+  color: white;
+  padding: 0.5rem 1.2rem;
+  border: none;
+  border-radius: 999px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.project-section {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  background-color: #800020;
+  text-align: center;
+}
+
+.project-section img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+.project-section h2 {
+  color: #FFD700;
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+}
+
+.project-section p {
+  color: #f0f0f0;
+  font-size: 0.95rem;
+  line-height: 1.7;
+  text-align: justify;
+}
+
+.project-section p:last-child {
+  margin-bottom: 0;
+}
+
+.read-more {
+  margin-top: 1.5rem;
+  display: inline-block;
+  background-color: #FFD700;
+  color: #111;
+  padding: 0.6rem 1.2rem;
+  border-radius: 999px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.read-more:hover {
+  background-color: #e6c200;
+}
+
+hr.section-divider {
+  border: none;
+  height: 3px;
+  background-color: #444;
+  margin: 60px 0;
+}
+
+.footer {
+  background-color: #2a2a2a;
+  color: #f0f0f0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 2rem;
+  text-align: center;
+}
+
+.footer-column {
+  flex: 1 1 300px;
+  margin: 1rem;
+}
+
+.footer-column h3 {
+  color: #990033;
+  margin-bottom: 1rem;
+}
+
+.footer-column p,
+.footer-column li,
+.footer-column a {
+  font-size: 1rem;
+  color: #f0f0f0;
+  margin: 0.5rem 0;
+  text-decoration: none;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.social-icon {
+  width: 50px;
+  margin: 0.5rem 0;
+}
+
+.sector-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+  margin-top: 2rem;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  box-sizing: border-box;
+}
+
+
+#projects-by-youth {
+  padding: 0;
+}
+
+#projects-by-youth h2 {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  font-size: 2.2rem;
+}
+
+.pitching-announcement {
+  background-color: #800020;
+  border-radius: 20px;
+  padding: 2rem 1rem;
+  margin: 1.5rem auto 0 auto;
+  max-width: 1000px;
+  box-sizing: border-box;
+  color: #ffffff;
+  text-align: center;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+
+.pitching-announcement h2 {
+  color: #FFD700;
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+}
+
+.pitching-announcement p {
+  font-size: 1rem;
+  line-height: 1.7;
+  margin-bottom: 1rem;
+  text-align: justify;
+}
+
+.pitching-announcement p strong {
+  display: block;
+  margin-top: 1rem;
+  color: #ffffff;
+}
+
+.carousel-wrapper {
+  width: 1000px;
+  max-width: 100%;
+  overflow: hidden;
+  margin: 2rem auto;
+  border-radius: 20px;
+}
+
+.carousel-track {
+  display: flex;
+  transition: transform 0.8s ease-in-out;
+}
+
+.carousel-track img {
+  width: 1000px;
+  height: auto;
+  flex-shrink: 0;
+  object-fit: contain;
+}
+
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+
+  #navMenu {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background-color: #2a2a2a;
+    padding: 1rem 0;
+    align-items: flex-start;
+    padding-left: 1.5rem;
+  }
+
+  #navMenu.show {
+    display: flex !important;
+  }
+
+  .nav-item {
+    width: 100%;
+    padding: 0.5rem 0;
+  }
+
+  .nav-item .dropdown {
+    position: static;
+    background: none;
+    padding-left: 1rem;
+    box-shadow: none;
+  }
+
+  .donate-btn {
+    align-self: flex-start;
+    margin-left: 0;
+    margin-top: 1rem;
+  }
+
+  .sector-grid {
+    grid-template-columns: 1fr;
+    padding: 0 1rem;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .project-section img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+
+  .project-section {
+    padding: 1rem;
+  }
+
+  #projects-for-youth {
+    padding: 0 1rem;
+    box-sizing: border-box;
+  }
+
+  .carousel-track img {
+    width: 100% !important;
+    height: auto !important;
+    object-fit: contain !important;
+    display: block;
+    margin: 0 auto;
+    max-height: 280px;
+  }
+}
+</style>
+
+</head>
+<body>
+
+<header>
+  <a href="index.html" class="logo-container" style="text-decoration: none;">
+    <img src="logo.png" alt="Youth Empowerment Logo" />
+    <span>Youth Empowerment</span>
+  </a>
+  <button class="hamburger" onclick="toggleMenu()" aria-label="Toggle menu">☰</button>
+  <nav id="navMenu">
+    <div class="nav-item">
+      <a href="index.html">Home ▼</a>
+      <div class="dropdown">
+        <a href="index.html#about">About Us</a>
+        <a href="index.html#mission">Mission & Values</a>
+        <a href="index.html#board">Board Members</a>
+        <a href="index.html#president">President's Message</a>
+      </div>
+    </div>
+
+    <div class="nav-item">
+      <a href="changemakers.html">Our Changemakers ▼</a>
+      <div class="dropdown">
+        <a href="changemakers.html#champions">Our Champions</a>
+        <a href="changemakers.html#volunteers">Our Changemakers</a>
+      </div>
+    </div>
+
+    <div class="nav-item">
+      <a href="projects.html">Our Projects ▼</a>
+      <div class="dropdown">
+        <a href="projects.html#projects-by-youth">Project By Youth</a>
+        <a href="projects.html#projects-for-youth">Project For Youth</a>
+      </div>
+    </div>
+
+    <div class="nav-item"><a href="news.html">News</a></div>
+    <div class="nav-item"><a href="contact.html">Contact</a></div>
+    <div class="nav-item"><a href="donate.html" class="donate-btn">Donate</a></div>
+    
+  </nav>
+</header>
+
+<section style="background-color: #2e2e2e; padding: 2rem 0;">
+  <section id="projects-by-youth" style="max-width: 1100px; margin: 0 auto;">
+    
+    <div style="text-align: center; margin-bottom: 2.5rem;">
+      <h2 style="font-size: 2.5rem; color: #ffffff; font-weight: 800;">Project By Youth</h2>
+    </div>
+
+    <div class="pitching-announcement">
+      <h2 style="color: #FFD700;">Empowering Youth through Design Thinking</h2>
+      <p>
+        At Youth Empowerment, we focus on equipping young people with the principles of Human-Centered Design Thinking. By teaching this innovative and empathetic approach, we empower them to better understand real community needs, co-create sustainable solutions, and become proactive changemakers in their own environments.
+      </p>
+    </div>
+
+    <div class="sector-grid">
+
+      <section class="project-section">
+        <img src="sport-art-culture.jpg" loading="lazy" alt="Sport, Art, and Culture" style="width:100%; border-radius:12px; margin-bottom:1rem;" />
+        <h2>Art, Culture and Sport</h2>
+        <p>Creativity and expression meet social transformation in this vibrant sector. Here, youth use sport, artistic expression, and cultural heritage as tools for community building, peace promotion, and personal development. They are designing projects that celebrate diversity, encourage talent, and foster unity through shared experiences.</p>
+      </section>
+
+      <section class="project-section">
+        <img src="human-rights.jpg" loading="lazy" alt="Human Rights and Civic Engagement" style="width:100%; border-radius:12px; margin-bottom:1rem;" />
+        <h2>Human Rights and Civic Engagement</h2>
+        <p>Rooted in the belief that every voice matters, this sector focuses on promoting democratic values, human rights awareness, and active civic participation. Young people in this sector are working on initiatives that advocate for social justice, inclusion, and youth involvement in decision-making processes.</p>
+      </section>
+
+      <section class="project-section">
+        <img src="education.jpg" loading="lazy" alt="Education and Capacity Building" style="width:100%; border-radius:12px; margin-bottom:1rem;" />
+        <h2>Education and Capacity Building</h2>
+        <p>This sector focuses on strengthening youth skills, knowledge, and leadership through educational initiatives and training opportunities. Our young team is preparing projects that enhance access to quality education, promote lifelong learning, and build essential life and professional skills.</p>
+      </section>
+
+      <section class="project-section">
+        <img src="climate.jpg" loading="lazy" alt="Environment, Climate, and Agriculture" style="width:100%; border-radius:12px; margin-bottom:1rem;" />
+        <h2>Environment, Climate, and Agriculture</h2>
+        <p>This sector is dedicated to empowering youth to take action on environmental sustainability, climate resilience, and agricultural innovation. Our young members are currently developing projects that promote eco-friendly practices, address climate challenges, and support sustainable farming systems. These initiatives aim to create tangible impact at both local and national levels.</p>
+      </section>
+
+    </div>
+    <div class="pitching-announcement">
+      <h2>Pitching Session Coming Soon!</h2>
+      <p>
+        All four sectors are working hard to design innovative, youth-led projects that respond to real community needs.
+        These initiatives will be presented during a <em>dedicated pitching session</em>, where our young changemakers
+        will showcase their ideas to potential partners, supporters, and stakeholders.
+      </p>
+      <p><strong>Stay tuned and be inspired by the future in the making!</strong></p>
+  </div>
+</div>
+  </section>
+</section>
+
+<section style="background-color: #1d3c34; padding: 2rem 0;">
+  <section id="projects-for-youth" style="max-width: 1000px; margin: 0 auto;">
+
+    <!-- Title -->
+    <div style="text-align: center; margin-bottom: 2rem;">
+      <h2 style="font-size: 2.5rem; color: #ffffff; font-weight: 800;">Project For Youth</h2>
+    </div>
+
+    <!-- Description -->
+    <div style="max-width: 900px; margin: 0 auto; color: #f0f0f0; font-size: 1rem; line-height: 1.7; text-align: justify;">
+      <p style="color: #FFD700;"><strong>Digital Entrepreneurship Mentorship Program</strong></p>
+      <p>In a world increasingly shaped by technology, young people must not only adapt but lead. Our free Digital Entrepreneurship Mentorship Program empowers youth to harness digital tools to create meaningful solutions for real-world challenges.</p>
+      <p>Through interactive workshops, hands-on mentorship, and peer collaboration, participants explore key topics such as digital business models, branding, content creation, and online marketing. The program is designed to build practical skills, spark innovation, and cultivate entrepreneurial mindsets.</p>
+      <p>By the end of the mentorship, each participant will design a digital product or service that responds to a specific need within their community. In addition to individual projects, one collective project will also be created by the entire group—an initiative designed to serve communities at a broader scale.</p>
+      <p>If you have a partnership idea or wish to support this journey, do not hesitate to contact us.</p>
+    </div>
+
+  <div class="carousel-wrapper">
+    <div class="carousel-track" id="carouselTrack">
+      <img src="photo1.jpg" alt="Photo 1">
+      <img src="photo2.jpg" alt="Photo 2">
+    </div>
+  </div>
+
+  </section>
+</section>
+
+
+
+<hr class="section-divider" />
+
+  <footer class="footer">
+    <div class="footer-column">
+      <h3>Follow our Journey</h3>
+      <a href="https://www.facebook.com/share/1Bpx24zMcb/?mibextid=wwXIfr" target="_blank">
+        <img src="facebook-icon.png" alt="Facebook" class="social-icon">
+      </a>
+      <h3>Contact Information</h3>
+      <p>youthempowerment.mg@gmail.com</p>
+    </div>
+    
+  <div class="footer-column">
+    <h3>Pages</h3>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="changemakers.html">Our Changemakers</a></li>
+      <li><a href="projects.html">Our Projects</a></li>
+      <li><a href="news.html">News</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="donate.html">Donate</a></li>
+    </ul>
+  </div>
+
+  <div class="footer-column">
+    <h3>Our Location</h3>
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15605.83892138594!2d47.4690628!3d-18.7998729!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x21f07997c361f8e5%3A0xe00f5fcb161c9264!2sIvato%20Airport%20City!5e0!3m2!1sen!2smg!4v1718123456789"
+      width="200" height="150" style="border:0; border-radius: 12px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+    <p>Lot K4-096 Ivato Airport,<br>Antananarivo, Madagascar</p>
+  </div>
+  </footer>
+
+
+<script>
+  function toggleMenu() {
+    document.getElementById('navMenu').classList.toggle('show');
+  }
+  function toggleDropdown() {
+    const menu = document.getElementById('dropdownMenu');
+    menu.style.display = menu.style.display === 'block' ? 'none' : 'block';
+  }
+  window.addEventListener('click', function(e) {
+    const navItem = document.querySelector('.nav-item');
+    const dropdown = document.getElementById('dropdownMenu');
+    if (!navItem.contains(e.target)) {
+      dropdown.style.display = 'none';
+    }
+  });
+
+  const track = document.getElementById('carouselTrack');
+  const slides = track.children;
+  const slideCount = slides.length;
+  const slideWidth = slides[0].offsetWidth;
+
+  let currentIndex = 0;
+  let allowTransition = true;
+
+  // Clone the first two slides for seamless loop
+  const clone1 = slides[0].cloneNode(true);
+  const clone2 = slides[1].cloneNode(true);
+  track.appendChild(clone1);
+  track.appendChild(clone2);
+
+  function slideNext() {
+    if (!allowTransition) return;
+
+    currentIndex++;
+    track.style.transition = 'transform 0.8s ease-in-out';
+    track.style.transform = `translateX(-${currentIndex * 100}%)`;
+
+    // Reset when reaching clone
+    if (currentIndex === slideCount) {
+      allowTransition = false;
+
+      // Wait for transition to finish before jump
+      setTimeout(() => {
+        track.style.transition = 'none';
+        track.style.transform = 'translateX(0)';
+        currentIndex = 0;
+        allowTransition = true;
+      }, 800);
+    }
+  }
+
+  setInterval(slideNext, 5000);
+</script>
+
+</body>
+</html>
