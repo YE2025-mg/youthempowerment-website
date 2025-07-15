@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>News | Youth Empowerment</title>
+  <meta name="description" content="Stay updated with the latest news and impactful stories from Youth Empowerment Madagascar. Discover how youth leaders are transforming their communities.">
+  <meta name="keywords" content="Youth Empowerment Madagascar, news, updates, youth projects, changemakers, community stories, Madagascar, youth leadership">
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="Youth Empowerment Madagascar">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background-color: #1f1f1f;
+      color: #f0f0f0;
+    }
+
+    header {
+      background-color: #2a2a2a;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 1.5rem;
+      flex-wrap: wrap;
+      position: relative;
+      z-index: 1000;
+    }
+
+    .logo-container {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      text-decoration: none;
+    }
+
+    .logo-container img {
+      height: 40px;
+    }
+
+    .logo-container span {
+      font-size: 1.2rem;
+      font-weight: bold;
+      color: #fff;
+    }
+
+    .hamburger {
+      display: none;
+      font-size: 1.8rem;
+      background: none;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+    }
+
+    #navMenu {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 2rem;
+    }
+
+    .nav-item {
+      position: relative;
+      font-weight: 600;
+      color: #f0f0f0;
+      cursor: pointer;
+    }
+
+    .nav-item a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .dropdown {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background-color: #3a3a3a;
+      padding: 0.5rem 1rem;
+      min-width: 180px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+      z-index: 999;
+    }
+
+    .dropdown a {
+      display: block;
+      color: #f0f0f0;
+      padding: 0.4rem 0;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .dropdown a:hover {
+      text-decoration: underline;
+    }
+    .nav-item:hover .dropdown {
+    display: block;
+    }
+
+    .donate-btn {
+      background-color: #f44336;
+      color: white;
+      padding: 0.5rem 1.2rem;
+      border: none;
+      border-radius: 999px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .news-section {
+      max-width: 1200px;
+      margin: 60px auto;
+      padding: 0 1rem;
+    }
+
+    .news-section h1 {
+      font-size: 2.5rem;
+      margin-bottom: 2rem;
+      color: #fff;
+    }
+
+    .news-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1.5rem;
+    }
+
+    .news-card {
+      background-color: #2a2a2a;
+      border-radius: 12px;
+      padding: 1rem;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 200px;
+    }
+
+    .news-card-content {
+      padding: 1rem 0;
+    }
+
+    .news-date {
+      font-size: 0.9rem;
+      color: #f39c12;
+    }
+
+    .news-title {
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: #ffffff;
+      line-height: 1.4;
+      overflow-wrap: break-word;
+    }
+
+    .news-title a {
+      color: #ffffff;
+      text-decoration: none;
+    }
+
+    .view-all {
+      margin-top: 2rem;
+      display: inline-block;
+      color: #f39c12;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    footer {
+      background-color: #2a2a2a;
+      color: #f0f0f0;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      padding: 2rem;
+      text-align: center;
+    }
+
+    .footer-column {
+      flex: 1 1 300px;
+      margin: 1rem;
+    }
+
+    .footer-column h3 {
+      color: #990033;
+      margin-bottom: 1rem;
+    }
+
+    .footer-column p,
+    .footer-column li,
+    .footer-column a {
+      font-size: 1rem;
+      color: #f0f0f0;
+      margin: 0.5rem 0;
+      text-decoration: none;
+    }
+
+    .footer-column ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .social-icon {
+      width: 50px;
+      margin: 0.5rem 0;
+    }
+
+    @media (max-width: 1000px) {
+      .news-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 768px) {
+      .hamburger {
+        display: block;
+        position: absolute;
+        top: 1rem;
+        right: 1.2rem;
+        z-index: 1100;
+      }
+
+      #navMenu {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: #2a2a2a;
+        padding: 1rem 0;
+      }
+
+      #navMenu.show {
+        display: flex;
+      }
+
+      .nav-item {
+        width: 100%;
+        padding: 0.5rem 1.5rem;
+      }
+
+      .nav-item .dropdown {
+        position: static;
+        background: none;
+        padding-left: 1rem;
+        box-shadow: none;
+      }
+
+      .donate-btn {
+        align-self: flex-start;
+      }
+
+      .news-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+    <a href="fr.index.html" class="logo-container" style="text-decoration: none;">
+      <img src="logo.png" alt="Logo Youth Empowerment" />
+      <span>Youth Empowerment</span>
+    </a>
+    <button class="hamburger" onclick="toggleMenu()" aria-label="Afficher le menu">☰</button>
+
+    <nav id="navMenu">
+      <div class="nav-item">
+        <a href="fr.index.html">Accueil ▼</a>
+        <div class="dropdown">
+          <a href="fr.index.html#about">À propos</a>
+          <a href="fr.index.html#mission">Mission & Valeurs</a>
+          <a href="fr.index.html#board">Membres du Conseil</a>
+          <a href="fr.index.html#president">Message du Président</a>
+        </div>
+      </div>
+      <div class="nav-item">
+        <a href="fr.changemakers.html">Nos Changemakers ▼</a>
+        <div class="dropdown">
+          <a href="fr.changemakers.html#champions">Nos Champions</a>
+          <a href="fr.changemakers.html#volunteers">Nos Changemakers</a>
+        </div>
+      </div>
+      <div class="nav-item">
+        <a href="fr.projects.html">Nos Projets ▼</a>
+        <div class="dropdown">
+          <a href="fr.projects.html#projects-by-youth">Projet par les Jeunes</a>
+          <a href="fr.projects.html#projects-for-youth">Projet pour les Jeunes</a>
+        </div>
+      </div>
+      <div class="nav-item"><a href="fr.news.html">Actualités</a></div>
+      <div class="nav-item"><a href="fr.contact.html">Contact</a></div>
+      <div class="nav-item"><a href="fr.donate.html" class="donate-btn">Faire un don</a></div>
+
+      <div class="language-switcher" style="display: flex; gap: 0.8rem; font-weight: 600; margin-left: auto;">
+        <a href="news.html" lang="en" style="color: #ffffff; text-decoration: underline;">ENG</a>
+        <span style="color: #ffffff;">|</span>
+        <a href="fr.news.html" lang="fr" style="color: #ffffff; text-decoration: underline;">FR</a>
+      </div>
+    </nav>
+  </header>
+
+<section class="news-section">
+  <h1>Actualités</h1>
+<div class="news-grid">
+
+  <div class="news-card">
+    <div class="news-card-content">
+      <div class="news-date">15 Avril 2025</div>
+      <div class="news-title">
+        <a href="fr.new2Art for Change on World Art Day.html" style="color: #ffffff; text-decoration: none;">
+          Jeunesse Éclairée : L'Art pour le Changement à l'Occasion de la Journée Mondiale de l'Art
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="news-card">
+    <div class="news-card-content">
+      <div class="news-date">11 Avril 2025</div>
+      <div class="news-title">
+        <a href="fr.news3SportArtandCultureinAction.html" style="color: #ffffff; text-decoration: none;">
+          Jeunesse Éclairée : Le Sport, l'Art et la Culture en Action !
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="news-card">
+    <div class="news-card-content">
+      <div class="news-date">8 Avril 2025</div>
+      <div class="news-title">
+        <a href="fr.news4buildingsolutions.html" style="color: #ffffff; text-decoration: none;">
+          Jeunesse Éclairée : Construire des Solutions par l'Éducation et le Renforcement des Compétences
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="news-card">
+    <div class="news-card-content">
+      <div class="news-date">27 Janvier 2025</div>
+      <div class="news-title">
+        <a href="fr.news5voice.html" style="color: #ffffff; text-decoration: none;">
+          Quatre Voix, Une Vision : Nos Avocats Passent à l'Action.
+        </a>
+      </div>
+    </div>
+  </div>
+  
+</div>
+
+  <a href="fr.viewmorenews.html" class="view-all">Voir toutes les actualités →</a>
+</section>
+
+<footer class="footer">
+  <div class="footer-column">
+    <h3>Suivez notre parcours</h3>
+    <a href="https://www.facebook.com/share/1Bpx24zMcb/?mibextid=wwXIfr" target="_blank">
+      <img src="facebook-icon.png" alt="Facebook" class="social-icon">
+    </a>
+    <h3>Informations de contact</h3>
+    <p>youthempowerment.mg@gmail.com</p>
+  </div>
+
+  <div class="footer-column">
+    <h3>Pages</h3>
+    <ul>
+      <li><a href="fr.index.html">Accueil</a></li>
+      <li><a href="fr.changemakers.html">Nos Changemakers</a></li>
+      <li><a href="fr.projects.html">Nos Projets</a></li>
+      <li><a href="fr.news.html">Actualités</a></li>
+      <li><a href="fr.contact.html">Contact</a></li>
+      <li><a href="fr.donate.html">Faire un don</a></li>
+    </ul>
+  </div>
+
+  <div class="footer-column">
+    <h3>Notre adresse</h3>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15605.83892138594!2d47.4690628!3d-18.7998729!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x21f07997c361f8e5%3A0xe00f5fcb161c9264!2sIvato%20Airport%20City!5e0!3m2!1sen!2smg!4v1718123456789"
+      width="200" height="150" style="border:0; border-radius: 12px;" allowfullscreen="" loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <p>Lot K4-096 Ivato Airport,<br>Antananarivo, Madagascar</p>
+  </div>
+</footer>
+
+<script>
+  function toggleMenu() {
+    document.getElementById('navMenu').classList.toggle('show');
+  }
+
+  function toggleDropdown(id) {
+    const dropdown = document.getElementById(id);
+    dropdown.style.display = dropdown.style.display === 'block' ? 'none' : 'block';
+  }
+
+  window.addEventListener('click', function (e) {
+    const insideNav = e.target.closest('.nav-item') || e.target.closest('.hamburger');
+    if (!insideNav) {
+      document.querySelectorAll('.dropdown').forEach(d => d.style.display = 'none');
+    }
+  });
+</script>
+
+</body>
+</html>
