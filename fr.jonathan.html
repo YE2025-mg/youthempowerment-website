@@ -1,16 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Razafitsalama Falitiana Harindranto</title>
-  <meta name="description" content="Explore the impact of Razafitsalama Falitiana Harindranto, a changemaker at Youth Empowerment Madagascar working to uplift youth and strengthen communities.">
-  <meta name="keywords" content="Razafitsalama Falitiana Harindranto, Youth Empowerment Madagascar, changemaker, youth, Madagascar, empowerment, leadership, community">
+  <title>Jonathan Ramiaramanana</title>
+  <meta name="description" content="Découvrez Jonathan Ramiaramanana, un acteur du changement au sein de Youth Empowerment Madagascar, engagé à inspirer les jeunes et à faire progresser des initiatives communautaires percutantes.">
+  <meta name="keywords" content="Jonathan Ramiaramanana, Youth Empowerment Madagascar, acteur du changement, jeunesse, Madagascar, leadership, autonomisation, impact social">
   <meta name="robots" content="index, follow">
   <meta name="author" content="Youth Empowerment Madagascar">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
-
-    <style>
+  <style>
     body {
       margin: 0;
       font-family: 'Poppins', sans-serif;
@@ -139,39 +138,42 @@
     <span>Youth Empowerment</span>
   </a>
   <div class="language-switcher" style="margin-left: auto; font-weight: 600; display: flex; gap: 0.8rem;">
-    <a href="falitiana.html" lang="en" style="color: #ffffff; text-decoration: underline;">ENG</a>
+    <a href="jonathan.html" lang="en" style="color: #ffffff; text-decoration: underline;">ENG</a>
     <span style="color: #ffffff;">|</span>
-    <a href="fr.falitiana.html" lang="fr" style="color: #ffffff; text-decoration: underline;">FR</a>
+    <a href="fr.jonathan.html" lang="fr" style="color: #ffffff; text-decoration: underline;">FR</a>
   </div>
 </header>
-
-
 <section class="profile-container">
   <div class="profile-header">
-    <img src="falitiana.jpg" alt="Razafitsalama Falitiana Harindranto">
-    <h1>Razafitsalama Falitiana Harindranto</h1>
+    <img src="changemaker6.jpg" alt="JONATHAN RAMIARAMANANA" style="width: 150px; height: 150px; border-radius: 50%; border: 4px solid #f0f0f0; object-fit: cover; object-position: center top; margin-bottom: 1rem;">
+    <h1>Jonathan Ramiaramanana</h1>
   </div>
-  
   <div class="profile-content">
-    <p>Currently pursuing a Master 2 in Business Administration with a specialization in Human Resources, Falitiana aims to achieve professional excellence by developing deep expertise in the HR field.</p>
+    <p>Né le 6 mai 2002 à Toamasina, Madagascar, Jonathan Ramiaramanana est un jeune talent de la région côtière qui se distingue par son tempérament audacieux, sa rigueur et son dynamisme. Passionné de cuisine, il aspire à devenir un grand chef et entretient un amour profond pour la littérature.</p>
 
-    <p>He believes that harmonious and productive working relationships are key to both collective and individual success. With a passion for people and team growth, his ambition is to actively contribute to the flourishing of teams by creating supportive, engaging, and motivating work environments.</p>
+    <p>Après l’obtention de son baccalauréat, Jonathan a entrepris des études de droit à l’Université d’Antananarivo. Cependant, en raison de circonstances familiales, il a courageusement suspendu sa deuxième année pour emprunter une nouvelle voie.</p>
 
-    <p class="quote">“Create synergies to unleash talents”<br><strong>– Risk is the down payment of success</strong></p>
+    <p>Il a suivi une formation modulaire en bureautique et a obtenu un certificat reconnu. Parallèlement, il a nourri son côté artistique en rejoignant une troupe de théâtre. En 2022, il a été sélectionné comme comédien radiophonique, marquant une nouvelle étape dans son parcours créatif.</p>
+
+    <p>Jonathan a ensuite commencé à travailler dans la télésurveillance tout en poursuivant activement sa recherche d’emploi. Ses objectifs professionnels incluent l’indépendance financière, l’obtention d’un emploi stable et bien rémunéré, et à terme, la création de sa propre entreprise pour générer des opportunités d’emploi pour d’autres.</p>
+
+    <p>Sa générosité et son altruisme motivent ses ambitions tournées vers la communauté. Guidé par sa devise personnelle :</p>
+    <p style="text-align: center; font-style: italic;">« Tout est possible pour ceux qui rêvent, osent, travaillent et ne renoncent jamais. »</p>
   </div>
 </section>
 
 <footer>
-  <p>&copy; 2025 Youth Empowerment Madagascar. All rights reserved.</p>
+  <p>&copy; 2025 Youth Empowerment Madagascar. Tous droits réservés.</p>
 </footer>
-
 <script>
-  const params = new URLSearchParams(window.location.search);
-  const slide = params.get('slide') || 0;
-  const backLink = document.getElementById("backLink");
-  backLink.href = `changemakers.html?slide=${slide}#volunteers`;
+  document.addEventListener("DOMContentLoaded", () => {
+    const params = new URLSearchParams(window.location.search);
+    const slide = params.get("slide");
+    const backLink = document.getElementById("backToChangemakers");
+    if (backLink && slide !== null) {
+      backLink.href = `changemakers.html?slide=${slide}#volunteers`;
+    }
+  });
 </script>
-
-
 </body>
 </html>

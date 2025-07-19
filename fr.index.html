@@ -1,0 +1,801 @@
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="google-site-verification" content="vE_SnI0cqF5FA-SD0SHO9MKTYcgbQ2ci5zvdnwsz-dA" />
+  <title>Youth Empowerment Madagascar</title>
+  <meta name="description" content="Youth Empowerment Madagascar autonomise les jeunes grâce au leadership, à l’éducation et à l’action communautaire pour un impact durable à travers Madagascar." />
+  <meta name="keywords" content="Youth Empowerment, Madagascar, Programmes de Leadership, Développement Communautaire, ONG Jeunesse, Acteurs du Changement, Éducation des Jeunes, Impact Social" />
+  <meta name="author" content="Youth Empowerment Madagascar" />
+  <meta name="robots" content="index, follow" />
+
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
+
+  <meta property="og:title" content="Youth Empowerment Madagascar" />
+  <meta property="og:description" content="Autonomiser la nouvelle génération d’acteurs du changement à Madagascar à travers l’éducation, le leadership et l’action sociale." />
+  <meta property="og:image" content="https://yempower.org/logo.png" />
+  <meta property="og:url" content="https://yempower.org" />
+  <meta property="og:type" content="website" />
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet" />
+</head>
+<style>
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: #1f1f1f;
+  color: #f0f0f0;
+}
+
+header {
+  background-color: #2a2a2a;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1.5rem;
+  gap: 0.8rem;
+  flex-wrap: nowrap;
+  position: relative;
+  z-index: 1000;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  text-decoration: none;
+}
+
+.logo-container img {
+  height: 40px;
+}
+
+.logo-container span {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #fff;
+}
+
+.hamburger {
+  display: none;
+  font-size: 1.8rem;
+  background: none;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  top: 1rem;
+  right: 1.2rem;
+  z-index: 1100;
+}
+
+#navMenu {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+.nav-item {
+  position: relative;
+  font-weight: 600;
+  color: #f0f0f0;
+  cursor: pointer;
+  width: auto;
+  padding: 0;
+}
+
+.nav-item a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.dropdown {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #3a3a3a;
+  padding: 0.5rem 1rem;
+  min-width: 180px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+  z-index: 999;
+}
+
+.dropdown a {
+  display: block;
+  color: #f0f0f0;
+  padding: 0.4rem 0;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.dropdown a:hover {
+  text-decoration: underline;
+}
+
+.donate-btn {
+  background-color: #f44336;
+  color: white;
+  padding: 0.5rem 1.2rem;
+  border: none;
+  border-radius: 999px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.hero {
+  position: relative;
+  text-align: center;
+  background-color: #1f1f1f;
+  overflow: hidden;
+}
+
+.carousel {
+  position: relative;
+  width: 100%;
+  height: 500px;
+}
+
+.slide {
+  display: none;
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+}
+
+.tagline {
+  position: absolute;
+  bottom: 20px;
+  width: 100%;
+  color: #fff;
+  font-size: 2.2rem;
+  font-weight: 700;
+  text-shadow: 2px 2px 6px rgba(0,0,0,0.3);
+}
+
+.prev, .next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 2rem;
+  background-color: rgba(0,0,0,0.4);
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  z-index: 10;
+  border-radius: 50%;
+}
+
+.prev { left: 20px; }
+.next { right: 20px; }
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.6);
+}
+
+.about-us {
+  max-width: 900px;
+  margin: 60px auto;
+  padding: 2rem;
+  background-color: #800020;
+  border-radius: 12px;
+  color: #ffffff;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.about-us h2 {
+  color: #ffffff;
+}
+
+.about-us p {
+  color: #f0f0f0;
+  text-align: justify;
+}
+
+.core-values {
+  background-color: #FFD700;
+  padding: 60px 20px;
+  text-align: center;
+  color: #222222;
+}
+
+.core-values h2 {
+  color: #800020;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.values-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.value-card {
+  background-color: #fff8dc;
+  border-radius: 20px;
+  padding: 30px;
+  max-width: 300px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+  color: #222222;
+}
+
+.value-card h3 {
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: #800020;
+}
+
+.value-card p {
+  font-size: 1rem;
+  color: #333333;
+  text-align: center;
+}
+
+.footer {
+  background-color: #2a2a2a;
+  color: #f0f0f0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 2rem;
+  text-align: center;
+}
+
+.footer-column {
+  flex: 1 1 300px;
+  margin: 1rem;
+}
+
+.footer-column h3 {
+  color: #990033;
+  margin-bottom: 1rem;
+}
+
+.footer-column p,
+.footer-column li,
+.footer-column a {
+  font-size: 1rem;
+  color: #f0f0f0;
+  margin: 0.5rem 0;
+  text-decoration: none;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.social-icon {
+  width: 50px;
+  margin: 0.5rem 0;
+}
+
+.board-members {
+  text-align: center;
+  padding: 60px 20px;
+  background-color: #FFD700;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  color: #800020; 
+}
+
+
+.member-titles {
+  display: flex;
+  justify-content: space-around;
+  gap: 2rem;
+  text-align: center;
+  margin-bottom: 1rem;
+  flex-wrap: wrap;
+}
+
+.member-titles p {
+  font-style: italic;
+  font-size: 1rem;
+  color: #ffffff;
+  margin: 0;
+  min-width: 150px;
+}
+
+.board-members h2 {
+  color: #800020;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.board-members p {
+  font-style: italic;
+  color: #800020;
+  margin-bottom: 2rem;
+}
+
+.board-grid .member-row {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+}
+
+.member {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  color: #ffffff;
+  max-width: 220px;
+  text-align: center;
+  margin: 0 1rem;
+}
+
+.member img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+  border: 4px solid #f0f0f0;
+}
+
+.member:hover img {
+  transform: scale(1.05);
+}
+
+.member h3 {
+  min-height: 3.5em;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  text-align: center;
+  font-size: 1.1rem;
+  font-weight: bold;
+  white-space: normal;
+  color: #800020;
+  line-height: 1.3;
+  margin: 0.8rem 0 0.2rem 0;
+}
+
+
+.member p {
+  margin: 0;
+  font-size: 0.95rem;
+  color: #800020;
+}
+
+.president-message {
+  background-color: #800020;
+  padding: 60px 20px;
+  border-radius: 12px;
+  color: #ffffff;
+}
+
+.message-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.message-text {
+  flex: 1 1 55%;
+  color: #ffffff;
+}
+
+.message-text h2 {
+  font-size: 2.4rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: #FFD700;
+}
+
+.message-text .greeting {
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: #ffffff;
+}
+
+.message-text p {
+  margin-bottom: 1rem;
+  text-align: justify;
+  font-size: 1.05rem;
+  line-height: 1.8;
+  color: #ffffff;
+}
+
+.message-image {
+  flex: 1 1 35%;
+  display: flex;
+  justify-content: center;
+}
+
+.message-image img {
+  width: 280px;
+  height: auto;
+  border-radius: 20px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* === RESPONSIVE === */
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+
+  #navMenu {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background-color: #2a2a2a;
+    padding: 1rem 0;
+  }
+
+  #navMenu.show {
+    display: flex !important;
+  }
+
+  .nav-item {
+    width: 100%;
+    padding: 0.5rem 1.5rem;
+  }
+
+  .nav-item .dropdown {
+    position: static;
+    background: none;
+    padding-left: 1rem;
+    box-shadow: none;
+  }
+
+  .donate-btn {
+    align-self: flex-start;
+  }
+
+  .tagline {
+    font-size: 1.5rem;
+    bottom: 20px;
+  }
+
+  .values-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .slide {
+    height: auto;
+    max-height: 100vh;
+    object-fit: contain;
+    max-width: 100%;
+  }
+
+  .carousel {
+    height: auto;
+  }
+
+  .member {
+    flex: 1 1 160px;
+    max-width: 180px;
+  }
+
+  .member-row {
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  .message-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .message-text {
+    text-align: center;
+  }
+}
+.impact-section-red {
+  background-color: #800020;
+  text-align: center;
+  padding: 60px 20px;
+  border-radius: 12px;
+  color: #ffffff;
+  max-width: 1000px;
+  margin: 0 auto;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.impact-section-red h2 {
+  font-size: 2.5rem;
+  color: #FFD700;
+  margin-bottom: 0.5rem;
+}
+
+.impact-section-red .subtitle {
+  font-size: 1rem;
+  margin-bottom: 2rem;
+  color: #eeeeee;
+}
+
+.impact-grid {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.impact-box {
+  background-color: #ffffff;
+  border-radius: 20px;
+  padding: 2rem;
+  width: 240px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.impact-icon {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.impact-box p {
+  font-size: 1rem;
+  margin-bottom: 0.8rem;
+  color: #800020;
+}
+
+.impact-number {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #ffffff;
+  background: linear-gradient(to right, #c62828, #b71c1c);
+  padding: 0.5rem 1.5rem;
+  border-radius: 999px;
+}
+
+</style>
+</head>
+<body>
+<header>
+  <a href="index.html" class="logo-container" style="text-decoration: none;">
+    <img src="logo.png" alt="Youth Empowerment Logo" />
+    <span>Youth Empowerment</span>
+  </a>
+<button class="hamburger" onclick="toggleMenu()" aria-label="Toggle menu">☰</button>
+
+<nav id="navMenu">
+    <div class="nav-item">
+        <a href="frindex.html">Accueil ▼</a>
+        <div class="dropdown">
+            <a href="fr.index.html#about">À propos</a>
+            <a href="fr.index.html#mission">Mission et Valeurs</a>
+            <a href="fr.index.html#board">Membres du Conseil</a>
+            <a href="fr.index.html#president">Message du Président</a>
+        </div>
+        </div>
+
+    <div class="nav-item">
+      <a href="fr.changemakers.html">Nos Acteurs du Changement ▼</a>
+      <div class="dropdown">
+        <a href="fr.changemakers.html#champions">Nos Champions</a>
+        <a href="fr.changemakers.html#volunteers">Nos Acteurs du Changement</a>
+      </div>
+    </div>
+
+    <div class="nav-item">
+      <a href="fr.projects.html">Nos Projets ▼</a>
+      <div class="dropdown">
+        <a href="fr.projects.html#projects-by-youth">Projet par les Jeunes</a>
+        <a href="fr.projects.html#projects-for-youth">Projet pour les Jeunes</a>
+      </div>
+    </div>
+
+    <div class="nav-item"><a href="fr.news.html">Actualités</a></div>
+    <div class="nav-item"><a href="fr.contact.html">Contact</a></div>
+    <div class="nav-item"><a href="fr.donate.html" class="donate-btn">Faire un Don</a></div>
+  
+    <div class="language-switcher" style="display: flex; gap: 0.8rem; font-weight: 600; margin-left: auto;">
+  <a href="changemakers.html" lang="en" style="color: #ffffff; text-decoration: underline;">ENG</a>
+  <span style="color: #ffffff;">|</span>
+  <a href="fr.changemakers.html" lang="fr" style="color: #ffffff; text-decoration: underline;">FR</a>
+</div>
+
+</nav>
+</header>
+<section class="hero">
+  <div class="carousel">
+    <img src="image1.jpg" class="slide" />
+    <img src="image2.jpg" class="slide" />
+    <img src="image3.jpg" class="slide" />
+    <img src="image4.jpg" class="slide" />
+  </div>
+  <h1 class="tagline">Jeunes Esprits, Grands Changements.</h1>
+</section>
+<hr style="border: none; height: 3px; background-color: #444; margin: 60px 0;" />
+
+<section class="about-us" id="about">
+  <h2>Autonomiser les Jeunes pour un Impact Global</h2>
+  <p>Au cœur de notre mission, nous croyons au pouvoir des jeunes de générer un changement positif au sein de leurs communautés et au-delà. Notre mission repose sur deux axes :</p>
+  <p><strong>Autonomisation des jeunes à Madagascar :</strong> Nous dotons les jeunes des compétences essentielles et de l’état d’esprit nécessaires pour s’épanouir personnellement et professionnellement, et devenir les leaders de demain.</p>
+  <p><strong>Action collective pour le changement social :</strong> Nous encourageons et facilitons la participation des jeunes à des initiatives collaboratives qui s’attaquent aux enjeux sociaux majeurs.</p>
+  <p>Ensemble, nous construisons un avenir meilleur, une communauté à la fois.</p>
+</section>
+<hr style="border: none; height: 3px; background-color: #444; margin: 60px 0;" />
+
+<section class="core-values" id="mission">
+  <h2>Nos Valeurs Fondamentales</h2>
+  <div class="values-grid">
+    <div class="value-card">
+      <h3>Inclusion</h3>
+      <p>Nous créons un environnement où chaque jeune se sent accueilli, valorisé et encouragé à participer pleinement. Youth Empowerment garantit un espace sans discrimination pour tous.</p>
+    </div>
+    <div class="value-card">
+      <h3>Diversité</h3>
+      <p>Nous célébrons et valorisons la richesse des origines, des perspectives et des expériences que chaque individu apporte.</p>
+    </div>
+    <div class="value-card">
+      <h3>Autonomie</h3>
+      <p>Nous favorisons l’indépendance et l’autonomie, en encourageant les jeunes à prendre des initiatives et à diriger leur propre changement positif.</p>
+    </div>
+  </div>
+</section>
+<hr style="border: none; height: 3px; background-color: #444; margin: 60px 0;" />
+
+<section class="impact-section-red" id="outcomes">
+  <h2>Notre Impact Jusqu’à Présent</h2>
+  <p class="subtitle">Depuis notre création en mars 2024</p>
+
+  <div class="impact-grid">
+    <div class="impact-box">
+      <div class="impact-icon">👤</div>
+      <p><strong>Jeunes Formés</strong></p>
+      <div class="impact-number" data-target="105">105</div>
+    </div>
+    <div class="impact-box">
+      <div class="impact-icon">🧩</div>
+      <p><strong>Projets en Cours</strong></p>
+      <div class="impact-number" data-target="13">13</div>
+    </div>
+    <div class="impact-box">
+      <div class="impact-icon">🌍</div>
+      <p><strong>Personnes Positivement Touchées</strong></p>
+      <div class="impact-number" data-target="100">100+</div>
+    </div>
+  </div>
+</section>
+
+<hr style="border: none; height: 3px; background-color: #444; margin: 60px 0;" />
+
+<section class="board-members" id="board">
+  <h2>Membres du Conseil</h2>
+  <p style="font-style: italic; color: #800020; margin-bottom: 2rem;">
+    Cliquez sur leur photo pour en savoir plus sur eux.
+  </p>
+  <div class="board-grid">
+    <div class="member-row">
+      <a href="romeo.html" class="member">
+        <img src="romeo-board.jpg" loading="lazy" alt="Roméo Tovonantenaina">
+        <h3>ROMÉO TOVONANTENAINA</h3>
+        <p>Président</p>
+      </a>
+    </div>
+
+    <div class="member-row">
+      <a href="heritoky.html" class="member">
+        <img src="heritoky.jpg" loading="lazy" alt="RANDRIAMANANA HERITOKY MAHASEDRA">
+        <h3>RANDRIAMANANA HERITOKY MAHASEDRA</h3>
+        <p>Vice-Président</p>
+      </a>
+      <a href="karen.html" class="member">
+        <img src="karen.jpg" loading="lazy" alt="KAREN RAMAMONJISOA">
+        <h3>KAREN RAMAMONJISOA</h3>
+        <p>Coordinatrice des Bénévoles</p>
+      </a>
+      <a href="daniella.html" class="member">
+        <img src="daniella.jpg" loading="lazy" alt="DANIELLÀ RAMANAMBOHITRA" style="object-position: top center;">
+        <h3>DANIELLÀ RAMANAMBOHITRA</h3>
+        <p>Responsable des Finances</p>
+      </a>
+    </div>
+  </div>
+</section>
+
+<hr style="border: none; height: 3px; background-color: #444; margin: 60px 0;" />
+
+<section class="president-message" id="president">
+  <div class="message-container">
+    <div class="message-text">
+      <h2>Message de Notre Président</h2>
+      <p class="greeting"><strong>Chers Jeunes,</strong></p>
+      <p>
+        Profitez pleinement de votre jeunesse. C’est une période unique dans votre vie, remplie d’opportunités de croissance, d’apprentissage et d’aventures. Savourez chaque moment, explorez vos passions et saisissez les occasions de développer de nouvelles compétences. Plus important encore, utilisez ces expériences pour soutenir et élever vos communautés.
+      </p>
+      <p>
+        Je crois fermement que nous, les jeunes, possédons tout le potentiel nécessaire pour impulser un changement significatif. Nous sommes l’espoir du monde de demain. Les défis auxquels nous faisons face aujourd’hui — qu’il s’agisse de problèmes environnementaux, d’injustices sociales ou d’inégalités économiques — sont importants, mais pas insurmontables. Ensemble, nous avons la créativité, l’énergie et la détermination pour relever ces défis et construire un avenir meilleur.
+      </p>
+      <p>
+        Demain dépend de nous. Nous avons le pouvoir de façonner ce qui est à venir, et nos actions d’aujourd’hui détermineront le monde dans lequel nous vivrons demain. Exploitons notre enthousiasme et notre énergie non seulement pour imaginer un avenir meilleur, mais aussi pour le concrétiser.
+      </p>
+      <p><strong><em>Ensemble, inspirons l’espoir, faisons avancer le progrès et construisons un avenir plus lumineux pour tous.</em></strong></p>
+      <p><strong>Roméo Tovonantenaina</strong></p>
+    </div>
+    <div class="message-image">
+      <img src="romeo.jpg" loading="lazy" alt="Roméo Tovonantenaina">
+    </div>
+  </div>
+</section>
+<hr style="border: none; height: 3px; background-color: #444; margin: 60px 0;" />
+
+<footer class="footer">
+  <div class="footer-column">
+    <h3>Suivez Notre Parcours</h3>
+    <a href="https://www.facebook.com/share/1Bpx24zMcb/?mibextid=wwXIfr" target="_blank">
+      <img src="facebook-icon.png" alt="Facebook" class="social-icon">
+    </a>
+    <h3>Informations de Contact</h3>
+    <p>youthempowerment.mg@gmail.com</p>
+  </div>
+
+  <div class="footer-column">
+    <h3>Pages</h3>
+    <ul>
+      <li><a href="fr.index.html">Accueil</a></li>
+      <li><a href="fr.changemakers.html">Nos Acteurs du Changement</a></li>
+      <li><a href="fr.projects.html">Nos Projets</a></li>
+      <li><a href="fr.news.html">Actualités</a></li>
+      <li><a href="fr.contact.html">Contact</a></li>
+      <li><a href="fr.donate.html">Faire un Don</a></li>
+    </ul>
+  </div>
+
+  <div class="footer-column">
+    <h3>Notre Localisation</h3>
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15605.83892138594!2d47.4690628!3d-18.7998729!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x21f07997c361f8e5%3A0xe00f5fcb161c9264!2sIvato%20Airport%20City!5e0!3m2!1sen!2smg!4v1718123456789"
+      width="200" height="150" style="border:0; border-radius: 12px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+    <p>Lot K4-096 Ivato Airport,<br>Antananarivo, Madagascar</p>
+  </div>
+</footer>
+
+<script>
+  function toggleMenu() {
+    document.getElementById('navMenu').classList.toggle('show');
+  }
+  function toggleDropdown() {
+    const menu = document.getElementById('dropdownMenu');
+    menu.style.display = menu.style.display === 'block' ? 'none' : 'block';
+  }
+  window.addEventListener('click', function(e) {
+    const navItem = document.querySelector('.nav-item');
+    const dropdown = document.getElementById('dropdownMenu');
+    if (!navItem.contains(e.target)) {
+      dropdown.style.display = 'none';
+    }
+  });
+
+  let currentSlide = 0;
+  const slides = document.querySelectorAll(".slide");
+  function showSlide(index) {
+    slides.forEach((slide, i) => {
+      slide.style.display = i === index ? "block" : "none";
+    });
+  }
+  function nextSlide() {
+    currentSlide = (currentSlide + 1) % slides.length;
+    showSlide(currentSlide);
+  }
+  function prevSlide() {
+    currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+    showSlide(currentSlide);
+  }
+  showSlide(currentSlide);
+
+  setInterval(() => {
+    nextSlide();
+  }, 3000);
+</script>
+</body>
+</html>
