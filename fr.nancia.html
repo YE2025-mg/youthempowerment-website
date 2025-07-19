@@ -3,14 +3,12 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Onjatahiana Sonïa</title>
-  <meta name="description" content="Découvrez Onjatahiana Sonïa, une jeune contributrice engagée de Youth Empowerment Madagascar, œuvrant pour inspirer, élever et mobiliser les jeunes à travers le leadership et l'action.">
-  <meta name="keywords" content="Onjatahiana Sonïa, Youth Empowerment Madagascar, ambassadrice, leader jeunesse, actrice du changement, Madagascar, autonomisation, leadership, communauté">
+  <title>Lalaina Nancia Ranomenjanahary</title>
+  <meta name="description" content="Découvrez Lalaina Nancia Ranomenjanahary, une actrice du changement au sein de Youth Empowerment Madagascar, engagée à inspirer et à autonomiser les jeunes à travers Madagascar.">
+  <meta name="keywords" content="Lalaina Nancia Ranomenjanahary, Youth Empowerment Madagascar, actrice du changement, jeunesse, Madagascar, autonomisation, leadership, développement communautaire">
   <meta name="robots" content="index, follow">
   <meta name="author" content="Youth Empowerment Madagascar">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
-
-
 <style>
     body {
       margin: 0;
@@ -133,40 +131,49 @@
   </style>
 </head>
 <body>
-
 <header>
   <a href="index.html" class="logo-container" style="text-decoration: none;">
     <img src="logo.png" alt="Logo Youth Empowerment" />
     <span>Youth Empowerment</span>
   </a>
   <div class="language-switcher" style="margin-left: auto; font-weight: 600; display: flex; gap: 0.8rem;">
-    <a href="sonia.html" lang="en" style="color: #ffffff; text-decoration: underline;">ENG</a>
+    <a href="nancia.html" lang="en" style="color: #ffffff; text-decoration: underline;">ENG</a>
     <span style="color: #ffffff;">|</span>
-    <a href="fr.sonia.html" lang="fr" style="color: #ffffff; text-decoration: underline;">FR</a>
+    <a href="fr.nancia.html" lang="fr" style="color: #ffffff; text-decoration: underline;">FR</a>
   </div>
 </header>
 <section class="profile-container">
   <div class="profile-header">
-    <img src="sonia.jpg" alt="Onjatahiana Sonïa">
-    <h1>Onjatahiana Sonïa</h1>
+    <img src="changemaker7.jpg" alt="Lalaina Nancia Ranomenjanahary">
+    <h1>Lalaina Nancia Ranomenjanahary</h1>
   </div>
-
   <div class="profile-content">
-    <p>Onjatahiana Sonïa est une éducatrice passionnée et une leader d’opinion influente dans le domaine de la psychologie de l’éducation. Titulaire d’un Diplôme de Technicien Supérieur (DTS) en Communication, elle a grandement contribué au secteur éducatif grâce à ses fonctions d’enseignement à l’Institut Supérieur de Madagascar, où elle est spécialisée dans le développement de l’enfant, la motivation et les politiques éducatives.</p>
+    <p>Spécialisée dans la relation client, Lalaina Nancia Ranomenjanahary a développé une expertise dans la gestion des appels entrants et sortants. Ce rôle a renforcé son autonomie, sa capacité d’adaptation et ses compétences en communication.</p>
 
-    <p>Conférencière recherchée lors d’événements éducatifs, Mlle Sonïa partage son expertise sur les stratégies pédagogiques efficaces et les approches innovantes du développement de l’enfant. Sa maîtrise de la psychologie de l’éducation fait d’elle une voix respectée dans le domaine, et elle s’engage activement à faire progresser les connaissances et les pratiques en faveur de l’épanouissement des enfants.</p>
+    <p>Elle a précédemment travaillé en tant que créatrice de contenus photo et vidéo pour les réseaux sociaux. Ce rôle créatif lui a permis d’explorer de nouvelles idées, de relever des défis professionnels et d’élargir ses compétences.</p>
 
-    <p>En dehors de sa carrière professionnelle, Sonïa aime créer des jeux éducatifs pour les enfants — une passion qui reflète son désir de rendre l’apprentissage à la fois efficace et ludique. Elle cultive également un intérêt pour la géographie à travers la randonnée, et s’investit comme bénévole dans des programmes locaux d’alphabétisation.</p>
+    <p>En tant qu’entrepreneure indépendante, elle s’épanouit dans l’interaction avec les jeunes, les professionnels et les clients internationaux. Sa polyvalence fait d’elle un atout précieux dans le développement commercial et la gestion de la relation client.</p>
 
-    <p>La mission de Sonïa est de promouvoir le développement holistique des enfants, en mettant l’accent sur leur croissance sociale, linguistique, physique et environnementale. Son engagement est animé par la conviction que prendre soin de toutes les dimensions du développement de l’enfant est essentiel pour construire un avenir meilleur.</p>
+    <p>Nancia aspire à agrandir son équipe et à contribuer à la croissance organisationnelle à long terme. Son engagement envers l’excellence, sa confiance dans les dynamiques sociales et son esprit entrepreneurial font d’elle un membre essentiel de toute initiative qu’elle entreprend.</p>
 
-    <p><em>« L’éducation est la fondation sur laquelle nous construisons notre avenir. »</em></p>
+    <p style="text-align: center; font-style: italic;">« Tout est possible pour ceux qui rêvent, osent, travaillent et n’abandonnent jamais. »</p>
   </div>
 </section>
 
 <footer>
   <p>&copy; 2025 Youth Empowerment Madagascar. Tous droits réservés.</p>
 </footer>
+
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const params = new URLSearchParams(window.location.search);
+    const slide = params.get("slide");
+    const backLink = document.getElementById("backToChangemakers");
+    if (backLink && slide !== null) {
+      backLink.href = `changemakers.html?slide=${slide}#volunteers`;
+    }
+  });
+</script>
 
 </body>
 </html>
