@@ -216,6 +216,13 @@
     }
 
     @media (max-width: 768px) {
+  .language-switcher {
+    display: flex;
+    justify-content: flex-end; 
+    width: 100%;
+    padding: 0.5rem 2rem 0 0; 
+    box-sizing: border-box;
+  }
       .hamburger {
         display: block;
         position: absolute;
@@ -255,6 +262,23 @@
       .news-grid {
         grid-template-columns: 1fr;
       }
+      html, body {
+      width: 100%;
+      overflow-x: hidden;
+    }
+
+    #navMenu {
+      width: 100%;
+      box-sizing: border-box;
+    }
+
+    #navMenu.show {
+      display: flex !important;
+    }
+    #navMenu .language-switcher {
+  align-self: flex-end;
+  padding: 0.5rem 3rem 0; 
+}
     }
   </style>
 </head>
@@ -300,9 +324,9 @@
     <div class="nav-item"><a href="donate.html" class="donate-btn">Donate</a></div>
     
         <div class="language-switcher" style="display: flex; gap: 0.8rem; font-weight: 600; margin-left: auto;">
-  <a href="changemakers.html" lang="en" style="color: #ffffff; text-decoration: underline;">ENG</a>
+  <a href="news.html" lang="en" style="color: #ffffff; text-decoration: underline;">ENG</a>
   <span style="color: #ffffff;">|</span>
-  <a href="fr.changemakers.html" lang="fr" style="color: #ffffff; text-decoration: underline;">FR</a>
+  <a href="fr.news.html" lang="fr" style="color: #ffffff; text-decoration: underline;">FR</a>
 </div>
   </nav>
 </header>
