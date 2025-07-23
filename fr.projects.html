@@ -17,13 +17,14 @@ body {
   color: #f0f0f0;
 }
 
+/* ===== HEADER ===== */
 header {
   background-color: #2a2a2a;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 1rem 1.5rem;
-  flex-wrap: nowrap;
+  flex-wrap: wrap; /* Allows wrapping on small screens */
   position: relative;
   z-index: 1000;
 }
@@ -52,9 +53,6 @@ header {
   color: #fff;
   border: none;
   cursor: pointer;
-  position: absolute;
-  top: 1rem;
-  right: 1.2rem;
   z-index: 1100;
 }
 
@@ -85,7 +83,7 @@ header {
   background-color: #3a3a3a;
   padding: 0.5rem 1rem;
   min-width: 220px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
   z-index: 999;
 }
 
@@ -113,8 +111,10 @@ header {
   border-radius: 999px;
   font-weight: bold;
   cursor: pointer;
+  white-space: nowrap;
 }
 
+/* ===== SECTIONS ===== */
 .project-section {
   max-width: 1000px;
   margin: 0 auto;
@@ -171,6 +171,7 @@ hr.section-divider {
   margin: 60px 0;
 }
 
+/* ===== FOOTER ===== */
 .footer {
   background-color: #2a2a2a;
   color: #f0f0f0;
@@ -210,6 +211,7 @@ hr.section-divider {
   margin: 0.5rem 0;
 }
 
+/* ===== SECTOR GRID ===== */
 .sector-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -220,7 +222,6 @@ hr.section-divider {
   margin-right: auto;
   box-sizing: border-box;
 }
-
 
 #projects-by-youth {
   padding: 0;
@@ -244,7 +245,6 @@ hr.section-divider {
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
 }
 
-
 .pitching-announcement h2 {
   color: #FFD700;
   font-size: 1.6rem;
@@ -264,6 +264,7 @@ hr.section-divider {
   color: #ffffff;
 }
 
+/* ===== CAROUSEL ===== */
 .carousel-wrapper {
   width: 1000px;
   max-width: 100%;
@@ -284,9 +285,21 @@ hr.section-divider {
   object-fit: contain;
 }
 
+/* ===== RESPONSIVE ===== */
 @media (max-width: 768px) {
+  header {
+    padding: 1rem;
+    flex-wrap: wrap;
+  }
+
+  .logo-container {
+    flex: 1;
+  }
+
   .hamburger {
     display: block;
+    position: relative;
+    margin-left: auto;
   }
 
   #navMenu {
@@ -352,6 +365,7 @@ hr.section-divider {
     max-height: 280px;
   }
 }
+
 </style>
 
 </head>
@@ -365,7 +379,7 @@ hr.section-divider {
 
 <nav id="navMenu">
     <div class="nav-item">
-        <a href="frindex.html">Accueil ▼</a>
+        <a href="fr.index.html">Accueil ▼</a>
         <div class="dropdown">
             <a href="fr.index.html#about">À propos</a>
             <a href="fr.index.html#mission">Mission et Valeurs</a>
@@ -395,9 +409,9 @@ hr.section-divider {
     <div class="nav-item"><a href="fr.donate.html" class="donate-btn">Faire un Don</a></div>
   
     <div class="language-switcher" style="display: flex; gap: 0.8rem; font-weight: 600; margin-left: auto;">
-  <a href="changemakers.html" lang="en" style="color: #ffffff; text-decoration: underline;">ENG</a>
+  <a href="projects.html" lang="en" style="color: #ffffff; text-decoration: underline;">ENG</a>
   <span style="color: #ffffff;">|</span>
-  <a href="fr.changemakers.html" lang="fr" style="color: #ffffff; text-decoration: underline;">FR</a>
+  <a href="fr.projects.html" lang="fr" style="color: #ffffff; text-decoration: underline;">FR</a>
 </div>
 
 </nav>
