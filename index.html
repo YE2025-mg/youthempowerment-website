@@ -34,7 +34,8 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 1rem 1.5rem;
-  flex-wrap: wrap;
+  gap: 0.8rem;
+  flex-wrap: nowrap;
   position: relative;
   z-index: 1000;
 }
@@ -73,7 +74,7 @@ header {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  gap: 2rem;
+  gap: 1.2rem;
 }
 
 .nav-item {
@@ -555,7 +556,51 @@ header {
   padding: 0.5rem 1.5rem;
   border-radius: 999px;
 }
+@media (max-width: 768px) {
+  .language-switcher {
+    display: flex;
+    justify-content: center; 
+    width: auto;             
+    margin: 0 auto;          
+    padding: 0.5rem 1rem;   
+    box-sizing: border-box;
+  }
+  header {
+    flex-wrap: wrap;
+  }
 
+  #navMenu {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1rem 0;
+  }
+
+  .nav-item, .language-switcher {
+    width: 100%;
+    padding-left: 1rem;
+  }
+    .language-switcher {
+    justify-content: flex-end;
+    width: 100%;
+    padding: 0.5rem 1rem 0;
+  }
+  html, body {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+#navMenu {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+#navMenu.show {
+  display: flex !important;
+}
+.language-switcher {
+  padding-right: 1rem; 
+}
+}
 </style>
 
 
@@ -602,9 +647,9 @@ header {
     <div class="nav-item"><a href="donate.html" class="donate-btn">Donate</a></div>
 
     <div class="language-switcher" style="display: flex; gap: 0.8rem; font-weight: 600; margin-left: auto;">
-      <a href="changemakers.html" lang="en" style="color: #ffffff; text-decoration: underline;">ENG</a>
+      <a href="index.html" lang="en" style="color: #ffffff; text-decoration: underline;">ENG</a>
       <span style="color: #ffffff;">|</span>
-      <a href="fr.changemakers.html" lang="fr" style="color: #ffffff; text-decoration: underline;">FR</a>
+      <a href="fr.index.html" lang="fr" style="color: #ffffff; text-decoration: underline;">FR</a>
     </div>
   </nav>
 </header>
