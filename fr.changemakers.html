@@ -72,7 +72,7 @@
   nav {
     display: flex;
     align-items: center;
-    gap: 1.2rem;
+    gap: 2rem;
   }
 
   .nav-item {
@@ -348,9 +348,6 @@
   white-space: normal;
 }
 
-
-
-  /* ✅ Champions layout (2 per row, already working) */
   #champions .changemakers-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -397,14 +394,6 @@
   overflow: visible;
 }
 
-.carousel-nav.left {
-  left: -28px;
-}
-
-.carousel-nav.right {
-  right: -28px; 
-}
-
 }
 </style>
 </head>
@@ -418,7 +407,7 @@
 
 <nav id="navMenu">
     <div class="nav-item">
-        <a href="frindex.html">Accueil ▼</a>
+        <a href="fr.index.html">Accueil ▼</a>
         <div class="dropdown">
             <a href="fr.index.html#about">À propos</a>
             <a href="fr.index.html#mission">Mission et Valeurs</a>
@@ -487,367 +476,43 @@
 
 <a id="slide=1"></a>
 <section id="volunteers" style="background-color: #ccc5b9; border-radius: 12px; padding: 2rem; max-width: 1200px; width: 100%; margin: 60px auto; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);">
-  <h2 style="margin-bottom: 0.25rem; color: #1f1f1f; font-size: 2.5rem; text-align: center; font-weight: 800;">Nos Acteurs du Changement</h2>
+  <h2 style="margin-bottom: 0.25rem; color: #1f1f1f; font-size: 2.5rem; text-align: center; font-weight: 800;">Nos Changemakers</h2>
   <p style="text-align: justify; font-size: 1.05rem; color: #111111; max-width: 850px; margin: 0 auto 1rem;">
-    Nos acteurs du changement sont le moteur de Youth Empowerment. Ils comprennent les pilotes de projet, qui conçoivent et dirigent des initiatives innovantes, ainsi que les bénévoles, qui soutiennent activement et contribuent au succès de nos actions sur le terrain. Ensemble, ils transforment des idées en réalité et créent un impact durable dans leurs communautés.
+    Nos changemakers sont le moteur de Youth Empowerment. Ils incluent des porteurs de projets, qui conçoivent et dirigent des initiatives innovantes, et des bénévoles, qui soutiennent activement et contribuent au succès de nos actions sur le terrain. Ensemble, ils transforment les idées en réalité et créent un impact durable dans leurs communautés.
   </p>
-  <p style="text-align: center; font-size: 1.1rem; color: #333333; margin-bottom: 1.5rem;"><i>Cliquez sur l’image pour en savoir plus sur eux !</i></p>
-    <div class="changemakers-carousel-wrapper">
-        <button class="carousel-nav left" style="top: 52%; transform: translateY(-50%);" onclick="prevSlideCM()">&#10094;</button>
-        <div class="changemakers-carousel" id="changemakersTrack" style="display: flex; width: 100%; transition: transform 0.5s ease;">
-   
-<!-- Slide 1 -->
-<div class="carousel-slide" style="min-width: 100%;">
-  <h3 style="text-align: center; color: #1f1f1f; font-size: 1.5rem; font-weight: 600; margin-bottom: 1.5rem;">
-    Art, Culture et Sport
-  </h3>
-  <div class="changemakers-grid">
-
-    <a href="yvon.html?slide=0" class="changemaker" style="display: flex; flex-direction: column; align-items: center; margin-top: 40px;">
-      <img src="yvon.webp" alt="FANASIMPITIAVANA ANDRINAJORO YVON"
-        style="width: 150px; height: 150px; border-radius: 50%; border: 4px solid #f0f0f0;
-              object-fit: cover; object-position: top center; margin-bottom: 1rem;">
-      <p style="color: #111111; text-align: center;">FANASIMPITIAVANA<br>ANDRINAJORO YVON</p>
-    </a>
-
-    <a href="juliette.html?slide=0" class="changemaker" style="display: flex; flex-direction: column; align-items: center; margin-top: 40px;">
-      <img src="juliette.webp" alt="MARIE JULIETTE SOLOFONIHAINGO"
-          style="width: 150px; height: 150px; border-radius: 50%; border: 4px solid #f0f0f0; object-fit: cover; object-position: top center; margin-bottom: 1rem;">
-      <p style="color: #111111; text-align: center;">MARIE JULIETTE<br>SOLOFONIHAINGO</p>
-    </a>
-
-    <a href="nanie.html?slide=0" class="changemaker" style="display: flex; flex-direction: column; align-items: center; margin-top: 40px;">
-      <img src="nanie.webp" alt="NANIE SEHENO RAZAFINDRABE"
-          style="width: 150px; height: 150px; border-radius: 50%; border: 4px solid #f0f0f0; object-fit: cover; object-position: top center; margin-bottom: 1rem;">
-      <p style="color: #111111; text-align: center;">NANIE SEHENO<br>RAZAFINDRABE</p>
-    </a>
-
-    <a href="amboara.html?slide=0" class="changemaker" style="display: flex; flex-direction: column; align-items: center; margin-top: 40px;">
-      <img src="amboara.webp" alt="RAVONIAINA MAHAVALISOA AMBOARANOMENAHY"
-          style="width: 150px; height: 150px; border-radius: 50%; border: 4px solid #f0f0f0; object-fit: cover; object-position: top center; margin-bottom: 1rem;">
-      <p style="color: #111111; text-align: center;">RAVONIAINA MAHAVALISOA AMBOARANOMENAHY RAZANADRAKOTOMIARINJATO</p>
-    </a>
-
-    <a href="falitiana.html?slide=0" class="changemaker" style="display: flex; flex-direction: column; align-items: center; margin-top: 40px;">
-      <img src="falitiana.webp" alt="RAZAFITSALAMA FALITIANA HARINDRANTO"
-          style="width: 150px; height: 150px; border-radius: 50%; border: 4px solid #f0f0f0; object-fit: cover; object-position: top center; margin-bottom: 1rem;">
-      <p style="color: #111111; text-align: center;">RAZAFITSALAMA<br>FALITIANA HARINDRANTO</p>
-    </a>
-
-    <a href="sarat.html?slide=0" class="changemaker" style="display: flex; flex-direction: column; align-items: center; margin-top: 40px;">
-      <img src="changemaker1.webp" alt="SARAT RASOANOMENJANAHARY"
-          style="width: 150px; height: 150px; border-radius: 50%; border: 4px solid #f0f0f0; object-fit: cover; object-position: top center; margin-bottom: 1rem;">
-      <p style="color: #111111; text-align: center;">SARAT<br>RASOANOMENJANAHARY</p>
-    </a>
-
-  </div>
-</div>
-<!-- Slide 2 -->
-<div class="carousel-slide" style="min-width: 100%;">
-  <h3 style="text-align: center; color: #1f1f1f; font-size: 1.5rem; font-weight: 600; margin-bottom: 1.5rem;">
-    Changement Climatique, Environnement et Agriculture
-  </h3>
-
-  <div class="changemakers-grid">
-
-    <a href="avotriniaina.html#slide=1" onclick="setSlideBeforeLeave(1)" class="changemaker" style="display: flex; flex-direction: column; align-items: center;">
-      <img src="avotriniaina.webp" alt="AVOTRINIAINA RATINARISOA" style="width: 150px; height: 150px; border-radius: 50%; border: 4px solid #f0f0f0; object-fit: cover; object-position: top center; margin-bottom: 1rem;">
-      <p style="color: #111111; text-align: center;">AVOTRINIAINA<br>RATINARISOA</p>
-    </a>
-
-    <a href="elianah.html#slide=1" onclick="setSlideBeforeLeave(1)" class="changemaker" style="display: flex; flex-direction: column; align-items: center;">
-      <img src="changemaker4.webp" alt="ELIANAH RAHARINIRINA" style="width: 150px; height: 150px; border-radius: 50%; border: 4px solid #f0f0f0; object-fit: cover; margin-bottom: 1rem;">
-      <p style="color: #111111; text-align: center;">ELIANAH<br>RAHARINIRINA</p>
-    </a>
-
-    <a href="henintsoa.html?slide=1" onclick="setSlideBeforeLeave(1)" class="changemaker" style="display: flex; flex-direction: column; align-items: center;">
-      <img src="henintsoa.webp" alt="HENINTSOA ANJATIANA RATOVONIAINA" style="width: 150px; height: 150px; border-radius: 50%; border: 4px solid #f0f0f0; object-fit: cover; margin-bottom: 1rem;">
-      <p style="color: #111111; text-align: center;">HENINTSOA<br>ANJATIANA RATOVONIAINA</p>
-    </a>
-
-    <a href="jonathan.html?slide=1" onclick="setSlideBeforeLeave(1)" class="changemaker" style="display: flex; flex-direction: column; align-items: center;">
-      <img src="changemaker6.webp" alt="JONATHAN RAMIARAMANANA" style="width: 150px; height: 150px; border-radius: 50%; border: 4px solid #f0f0f0; object-fit: cover; object-position: center top; margin-bottom: 1rem;">
-      <p style="color: #111111; text-align: center;">JONATHAN<br>RAMIARAMANANA</p>
-    </a>
-
-    <a href="nancia.html?slide=1" onclick="setSlideBeforeLeave(1)" class="changemaker" style="display: flex; flex-direction: column; align-items: center;">
-      <img src="changemaker7.webp" alt="LALAINA NANCIA RANOMENJANAHARY" style="width: 150px; height: 150px; border-radius: 50%; border: 4px solid #f0f0f0; object-fit: cover; margin-bottom: 1rem;">
-      <p style="color: #111111; text-align: center;">LALAINA NANCIA<br>RANOMENJANAHARY</p>
-    </a>
-
-    <a href="nasaina.html?slide=1" onclick="setSlideBeforeLeave(1)" class="changemaker" style="display: flex; flex-direction: column; align-items: center;">
-      <img src="nasaina.webp" alt="NASAINA ANDRIANJARISOA" style="width: 150px; height: 150px; border-radius: 50%; border: 4px solid #f0f0f0; object-fit: cover; margin-bottom: 1rem; object-position: top center;">
-      <p style="color: #111111; text-align: center;">NASAINA<br>ANDRIANJARISOA</p>
-    </a>
-
-    <a href="nomena.html?slide=1" onclick="setSlideBeforeLeave(1)" class="changemaker" style="display: flex; flex-direction: column; align-items: center;">
-      <img src="changemaker5.webp" alt="NOMENA RANDRIAMANGA HENINTSOA" style="width: 150px; height: 150px; border-radius: 50%; border: 4px solid #f0f0f0; object-fit: cover; margin-bottom: 1rem;">
-      <p style="color: #111111; text-align: center;">NOMENA<br>RANDRIAMANGA HENINTSOA</p>
-    </a>
-
-    <a href="sonia.html?slide=1" onclick="setSlideBeforeLeave(1)" class="changemaker" style="display: flex; flex-direction: column; align-items: center;">
-      <img src="sonia.webp" alt="ONJATAHIANA SONÏA" style="width: 150px; height: 150px; border-radius: 50%; border: 4px solid #f0f0f0; object-fit: cover; margin-bottom: 1rem;">
-      <p style="color: #111111; text-align: center;">ONJATAHIANA<br>SONÏA</p>
-    </a>
-
-    <a href="raphaelito.html?slide=1" onclick="setSlideBeforeLeave(1)" class="changemaker" style="display: flex; flex-direction: column; align-items: center; margin-top: 40px;">
-      <img src="raphaelito.webp" alt="RAPHAELITO LANDRY RANDRIANIAINA AMBININTSOA" style="width: 150px; height: 150px; border-radius: 50%; border: 4px solid #f0f0f0; object-fit: cover; object-position: top center; margin-bottom: 1rem;">
-      <p style="color: #111111; text-align: center;">RAPHAELITO<br>LANDRY RANDRIANIAINA AMBININTSOA</p>
-    </a>
-
-    <a href="elisabelle.html?slide=1" onclick="setSlideBeforeLeave(1)" class="changemaker" style="display: flex; flex-direction: column; align-items: center; margin-top: 40px;">
-      <img src="elisabelle.webp" alt="RASOANANDRASANA Andriniaina Marie Elisabelle" style="width: 150px; height: 150px; border-radius: 50%; border: 4px solid #ffffff; object-fit: cover; object-position: top center; margin-bottom: 1rem;">
-      <p style="color: #111111; text-align: center;">RASOANANDRASANA<br>ANDRINIAINA MARIE ELISABELLE</p>
-    </a>
-
-    <a href="solofoniana.html?slide=1" onclick="setSlideBeforeLeave(1)" class="changemaker" style="display: flex; flex-direction: column; align-items: center; margin-top: 40px;">
-      <img src="solofoniana.webp" alt="SOLOFONIANA NANTENAINA PAUL ANDRIATAHIANA" style="width: 150px; height: 150px; border-radius: 50%; border: 4px solid #f0f0f0; object-fit: cover; margin-bottom: 1rem;">
-      <p style="color: #111111; text-align: center;">SOLOFONIANA<br>NANTENAINA PAUL ANDRIATAHIANA</p>
-    </a>
-
-    <a href="steniah.html?slide=1" onclick="setSlideBeforeLeave(1)" class="changemaker" style="display: flex; flex-direction: column; align-items: center; margin-top: 40px;">
-      <img src="steniah.webp" alt="STENIAH RAMAHEFANIRINA NAMBININTSOA" style="width: 150px; height: 150px; border-radius: 50%; border: 4px solid #f0f0f0; object-fit: cover; object-position: top center; margin-bottom: 1rem;">
-      <p style="color: #111111; text-align: center;">STENIAH<br>RAMAHEFANIRINA NAMBININTSOA</p>
-    </a>
-
-    <a href="tatianah.html?slide=1" onclick="setSlideBeforeLeave(1)" class="changemaker" style="display: flex; flex-direction: column; align-items: center; margin-top: 40px;">
-      <img src="tatianah.webp" alt="TATIANAH HANITRINIAINA" style="width: 150px; height: 150px; border-radius: 50%; border: 4px solid #f0f0f0; object-fit: cover; object-position: top center; margin-bottom: 1rem;">
-      <p style="color: #111111; text-align: center;">TATIANAH<br>HANITRINIAINA</p>
-    </a>
-
-    <a href="tojonirina.html?slide=1" onclick="setSlideBeforeLeave(1)" class="changemaker" style="display: flex; flex-direction: column; align-items: center; margin-top: 40px;">
-      <img src="tojonirina.webp" alt="TOJONIRINA RANDRIAMALALA" style="width: 150px; height: 150px; border-radius: 50%; border: 4px solid #f0f0f0; object-fit: cover; object-position: top center; margin-bottom: 1rem;">
-      <p style="color: #111111; text-align: center;">TOJONIRINA<br>RANDRIAMALALA</p>
-    </a>
-
-  </div>
-</div>
-<!-- Slide 3 -->
-<div class="carousel-slide" style="min-width: 100%;">
-  <h3 style="text-align: center; color: #1f1f1f; font-size: 1.5rem; font-weight: 600; margin-bottom: 1.5rem;">
-    Éducation et Renforcement des Capacités
-  </h3>
-  <div class="changemakers-grid">
-
-    <a href="heriniainjanahary.html" onclick="setSlideBeforeLeave(2)" class="changemaker" style="display: flex; flex-direction: column; align-items: center; margin-top: 40px;">
-      <img src="heriniainjanahary.webp" alt="HERINIAINJANAHARY MY LIFE"
-        style="width: 150px; height: 150px; border-radius: 50%; border: 4px solid #f0f0f0; object-fit: cover; margin-bottom: 1rem;">
-      <p style="color: #111111; text-align: center;">HERINIAINJANAHARY<br>MY LIFE</p>
-    </a>
-
-    <a href="jessica.html" onclick="setSlideBeforeLeave(2)" class="changemaker" style="display: flex; flex-direction: column; align-items: center; margin-top: 40px;">
-      <img src="jessica.webp" alt="RAKOTOARISON VALISOA NIRINA SAROBIDY JESSICA"
-        style="width: 150px; height: 150px; border-radius: 50%; border: 4px solid #f0f0f0; object-fit: cover; margin-bottom: 1rem;">
-      <p style="color: #111111; text-align: center;">RAKOTOARISON<br>VALISOA NIRINA SAROBIDY JESSICA</p>
-    </a>
-
-    <a href="mitantsoa.html" onclick="setSlideBeforeLeave(2)" class="changemaker" style="display: flex; flex-direction: column; align-items: center; margin-top: 40px;">
-      <img src="mitantsoa.webp" alt="MITANTSOA NOMENJANAHARY"
-        style="width: 150px; height: 150px; border-radius: 50%; border: 4px solid #f0f0f0; object-fit: cover; object-position: top center; margin-bottom: 1rem;">
-      <p style="color: #111111; text-align: center;">MITANTSOA<br>NOMENJANAHARY</p>
-    </a>
-
-    <a href="rantoniana.html" onclick="setSlideBeforeLeave(2)" class="changemaker" style="display: flex; flex-direction: column; align-items: center; margin-top: 40px;">
-      <img src="rantoniana.webp" alt="RANTONIANA RAZAFINDRASOA"
-        style="width: 150px; height: 150px; border-radius: 50%; border: 4px solid #f0f0f0; object-fit: cover; object-position: top center; margin-bottom: 1rem;">
-      <p style="color: #111111; text-align: center;">RANTONIANA<br>RAZAFINDRASOA</p>
-    </a>
-
-  </div>
-</div>
-
-<!-- Slide 4 -->
-<div class="carousel-slide" style="min-width: 100%;">
-  <h3 style="text-align: center; color: #1f1f1f; font-size: 1.5rem; font-weight: 600; margin-bottom: 1.5rem;">
-    Droits Humains et Engagement Citoyen
-  </h3>
-
-  <div class="changemakers-grid">
-
-    <a href="milanto.html" onclick="setSlideBeforeLeave(3)" class="changemaker" style="display: flex; flex-direction: column; align-items: center; margin-top: 40px;">
-      <img src="milanto.webp" alt="Andriniavo Tefiharizaka Milanto"
-        style="width: 150px; height: 150px; border-radius: 50%; border: 4px solid #f0f0f0; object-fit: cover; object-position: top center; margin-bottom: 1rem;">
-      <p style="color: #111111; text-align: center;">ANDRINIAVO<br>TEFIHARIZAKA MILANTO</p>
-    </a>
-
-    <a href="diera.html" onclick="setSlideBeforeLeave(3)" class="changemaker" style="display: flex; flex-direction: column; align-items: center; margin-top: 40px;">
-      <img src="changemaker2.webp" alt="DIERA RAKOTOMALALA"
-        style="width: 150px; height: 150px; border-radius: 50%; border: 4px solid #f0f0f0; object-fit: cover; object-position: center 30%; margin-bottom: 1rem;">
-      <p style="color: #111111; text-align: center;">DIERA<br>RAKOTOMALALA OLINIVO</p>
-    </a>
-
-    <a href="lara.html" onclick="setSlideBeforeLeave(3)" class="changemaker" style="display: flex; flex-direction: column; align-items: center; margin-top: 40px;">
-      <img src="changemaker8.webp" alt="KONG MOULEE Lara Tinah RAHARIVONY"
-        style="width: 150px; height: 150px; border-radius: 50%; border: 4px solid #f0f0f0; object-fit: cover; object-position: top center; margin-bottom: 1rem;">
-      <p style="color: #111111; text-align: center;">KONG MOULEE LARA TINAH RAHARIVONY</p>
-    </a>
-
-    <a href="oliva.html" onclick="setSlideBeforeLeave(3)" class="changemaker" style="display: flex; flex-direction: column; align-items: center; margin-top: 40px;">
-      <img src="oliva.webp" alt="Rafenomanantsoa Oliva Sarindra"
-        style="width: 150px; height: 150px; border-radius: 50%; border: 4px solid #f0f0f0; object-fit: cover; object-position: top center; margin-bottom: 1rem;">
-      <p style="color: #111111; text-align: center;">RAFENOMANANTSOA<br>OLIVA SARINDRA</p>
-    </a>
-
-    <a href="miora.html" onclick="setSlideBeforeLeave(3)" class="changemaker" style="display: flex; flex-direction: column; align-items: center; margin-top: 40px;">
-      <img src="miora.webp" alt="RAJERIHARISOA Nomenjanahary Miora"
-        style="width: 150px; height: 150px; border-radius: 50%; border: 4px solid #f0f0f0; object-fit: cover; object-position: top center; margin-bottom: 1rem;">
-      <p style="color: #111111; text-align: center;">RAJERIHARISOA<br>NOMENJANAHARY MIORA</p>
-    </a>
-
-    <a href="mirantsoa-mireille.html" onclick="setSlideBeforeLeave(3)" class="changemaker" style="display: flex; flex-direction: column; align-items: center; margin-top: 40px;">
-      <img src="mirantsoa-mireille.webp" alt="RAKOTOMALALA Mirantsoa Mireille"
-        style="width: 150px; height: 150px; border-radius: 50%; border: 4px solid #f0f0f0; object-fit: cover; object-position: top center; margin-bottom: 1rem;">
-      <p style="color: #111111; text-align: center;">RAKOTOMALALA<br>MIRANTSOA MIREILLE</p>
-    </a>
-
-    <a href="mirantsoa.html" onclick="setSlideBeforeLeave(3)" class="changemaker" style="display: flex; flex-direction: column; align-items: center; margin-top: 40px;">
-      <img src="mirantsoa.webp" alt="RAKOTONINDRINA Marie Mirantsoa"
-        style="width: 150px; height: 150px; border-radius: 50%; border: 4px solid #f0f0f0; object-fit: cover; object-position: top center; margin-bottom: 1rem;">
-      <p style="color: #111111; text-align: center;">RAKOTONINDRINA<br>MARIE MIRANTSOA</p>
-    </a>
-
-    <a href="tahiry.html" onclick="setSlideBeforeLeave(3)" class="changemaker" style="display: flex; flex-direction: column; align-items: center; margin-top: 40px;">
-      <img src="tahiry.webp" alt="Razafindravelo Maminirina Tahiry"
-        style="width: 150px; height: 150px; border-radius: 50%; border: 4px solid #f0f0f0; object-fit: cover; object-position: top center; margin-bottom: 1rem;">
-      <p style="color: #111111; text-align: center;">RAZAFINDRAVELO<br>MAMINIRINA TAHIRY</p>
-    </a>
-
-  </div>
-</div>
-<!-- Slide 5 -->
-<div class="carousel-slide" style="min-width: 100%;">
-  <h3 style="text-align: center; color: #1f1f1f; font-size: 1.5rem; font-weight: 600; margin-bottom: 1.5rem;">
-    Volontaires
-  </h3> 
-  <div class="changemakers-grid">
-
-    <a href="christino.html" onclick="setSlideBeforeLeave(4)" class="changemaker" style="display: flex; flex-direction: column; align-items: center;">
-      <img src="christino.webp" alt="Andriamialy Harimanana Tahiry Christino"
-        style="width: 150px; height: 150px; border-radius: 50%; border: 4px solid #ffffff; object-fit: cover; object-position: top center; margin-bottom: 1rem;">
-      <p style="color: #111111; text-align: center;">ANDRIAMIALY HARIMANANA<br>TAHIRY CHRISTINO</p>
-    </a>
-
-    <a href="daniel.html" onclick="setSlideBeforeLeave(4)" class="changemaker" style="display: flex; flex-direction: column; align-items: center;">
-      <img src="daniel.webp" alt="Andrianirina Daniel Second"
-        style="width: 150px; height: 150px; border-radius: 50%; border: 4px solid #ffffff; object-fit: cover; object-position: top center; margin-bottom: 1rem;">
-      <p style="color: #111111; text-align: center;">ANDRIANIRINA<br>DANIEL SECOND</p>
-    </a>
-
-    <a href="anita.html" onclick="setSlideBeforeLeave(4)" class="changemaker" style="display: flex; flex-direction: column; align-items: center;">
-      <img src="changemaker3.webp" alt="ANITA DE BERGE"
-        style="width: 150px; height: 150px; border-radius: 50%; border: 4px solid #ffffff; object-fit: cover; object-position: 50% 70%; margin-bottom: 1rem;">
-      <p style="color: #111111; text-align: center;">ANITA<br>DE BERGE</p>
-    </a>
-
-    <a href="erica.html" onclick="setSlideBeforeLeave(4)" class="changemaker" style="display: flex; flex-direction: column; align-items: center;">
-      <img src="erica.webp" alt="RAZAFIMIARIMANANA Pierrette Erica"
-        style="width: 150px; height: 150px; border-radius: 50%; border: 4px solid #f0f0f0; object-fit: cover; object-position: top center; margin-bottom: 1rem;">
-      <p style="color: #111111; text-align: center;">RAZAFIMIARIMANANA<br>PIERRETTE ERICA</p>
-    </a>
-
-    <a href="jeannie.html" onclick="setSlideBeforeLeave(4)" class="changemaker" style="display: flex; flex-direction: column; align-items: center;">
-      <img src="jeannie.webp" alt="RAKOTOARISOA Jeannie Joséa Estelle"
-        style="width: 150px; height: 150px; border-radius: 50%; border: 4px solid #f0f0f0; object-fit: cover; margin-bottom: 1rem;">
-      <p style="color: #111111; text-align: center;">RAKOTOARISOA<br>JEANNIE JOSÉA ESTELLE</p>
-    </a>
-
-    <a href="koloina.html" onclick="setSlideBeforeLeave(4)" class="changemaker" style="display: flex; flex-direction: column; align-items: center;">
-      <img src="koloina.webp" alt="Koloina"
-        style="width: 150px; height: 150px; border-radius: 50%; border: 4px solid #f0f0f0; object-fit: cover; object-position: top center; margin-bottom: 1rem;">
-      <p style="color: #111111; text-align: center;">KOLOINA RANDRIAMANANTENA</p>
-    </a>
-
-    <a href="mahenina.html" onclick="setSlideBeforeLeave(4)" class="changemaker" style="display: flex; flex-direction: column; align-items: center;">
-      <img src="mahenina.webp" alt="Randriambahoaka Barinjanahary Mahenina"
-        style="width: 150px; height: 150px; border-radius: 50%; border: 4px solid #f0f0f0; object-fit: cover; margin-bottom: 1rem;">
-      <p style="color: #111111; text-align: center;">RANDRIAMBAHOAKA<br>BARINJANAHARY MAHENINA</p>
-    </a>
-
-  </div>
-</div>
-
-</div>
-    <button class="carousel-nav right" style="top: 52%; transform: translateY(-50%);" onclick="nextSlideCM()">&#10095;</button>
-  </div>
-</section>
+    <p style="text-align: center; font-size: 1.1rem; color: #111111; margin-bottom: 1.5rem;">
+      <i>Cliquez sur un secteur pour voir tous les changemakers dans ce domaine.</i>
+    </p>
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 2rem; justify-items: center; padding: 2rem 1rem;">
+      <a href="sector-art.html" class="sector-link" style="text-decoration: none; color: #111111; text-align: center;">
+        <img src="sector-art-icon.webp" alt="Art, Culture & Sport" style="width: 120px; height: 120px; border-radius: 50%; border: 4px solid #f0f0f0; margin-bottom: 0.8rem;">
+        <p>Art, Culture et Sport</p>
+      </a>
+      <a href="sector-climate.html" class="sector-link" style="text-decoration: none; color: #111111; text-align: center;">
+        <img src="sector-climate-icon.webp" alt="Changements Climatiques et Agriculture" style="width: 120px; height: 120px; border-radius: 50%; border: 4px solid #f0f0f0; margin-bottom: 0.8rem;">
+        <p>Changements Climatiques et Agriculture</p>
+      </a>
+      <a href="sector-education.html" class="sector-link" style="text-decoration: none; color: #111111; text-align: center;">
+        <img src="sector-education-icon.webp" alt="Éducation et Renforcement des Capacités" style="width: 120px; height: 120px; border-radius: 50%; border: 4px solid #f0f0f0; margin-bottom: 0.8rem;">
+        <p>Éducation et Renforcement des Capacités</p>
+      </a>
+      <a href="sector-humanrights.html" class="sector-link" style="text-decoration: none; color: #111111; text-align: center;">
+        <img src="sector-humanrights-icon.webp" alt="Droits Humains et Engagement Civique" style="width: 120px; height: 120px; border-radius: 50%; border: 4px solid #f0f0f0; margin-bottom: 0.8rem;">
+        <p>Droits Humains et Engagement Civique</p>
+      </a>
+      <a href="sector-volunteers.html" class="sector-link" style="text-decoration: none; color: #111111; text-align: center;">
+        <img src="sector-volunteers-icon.webp" alt="Bénévoles" style="width: 120px; height: 120px; border-radius: 50%; border: 4px solid #f0f0f0; margin-bottom: 0.8rem;">
+        <p>Bénévoles</p>
+      </a>
+    </div>
+  </section>
 
 <hr style="border: none; height: 3px; background-color: #444; margin: 60px 0;" />
 
-
 <script>
-  document.body.classList.add("preload");
-  document.documentElement.classList.add("js-hidden");
-
   function toggleMenu() {
     document.getElementById("navMenu").classList.toggle("show");
   }
-
-  function toggleDropdown() {
-    const menu = document.getElementById("dropdownMenu");
-    if (menu) {
-      menu.style.display = menu.style.display === "block" ? "none" : "block";
-    }
-  }
-
-  window.addEventListener("click", function (e) {
-    const navItem = document.querySelector(".nav-item");
-    const dropdown = document.getElementById("dropdownMenu");
-    if (dropdown && !navItem.contains(e.target)) {
-      dropdown.style.display = "none";
-    }
-  });
-
-  let currentSlideCM = 0;
-  let slidesCM = [];
-
-  function showSlideCM(index) {
-    if (!slidesCM.length) return;
-    if (index >= slidesCM.length) index = 0;
-    if (index < 0) index = slidesCM.length - 1;
-
-    currentSlideCM = index;
-    slidesCM.forEach((slide, i) => {
-      slide.style.display = i === currentSlideCM ? "block" : "none";
-    });
-  }
-
-  function nextSlideCM() {
-    showSlideCM(currentSlideCM + 1);
-  }
-
-  function prevSlideCM() {
-    showSlideCM(currentSlideCM - 1);
-  }
-
-  function getSlideFromURL() {
-    const params = new URLSearchParams(window.location.search);
-    const slide = parseInt(params.get("slide"));
-    return isNaN(slide) ? 0 : slide;
-  }
-
-  function setSlideBeforeLeave(slideNumber) {
-    sessionStorage.setItem("changemakerSlide", slideNumber);
-  }
-
-window.addEventListener("pageshow", () => {
-  slidesCM = document.querySelectorAll(".carousel-slide");
-
-  const storedSlide = sessionStorage.getItem("changemakerSlide");
-  const initialSlide = storedSlide ? parseInt(storedSlide) : getSlideFromURL();
-
-  const section = document.getElementById("volunteers");
-  if (storedSlide !== null || window.location.search.includes("slide")) {
-    if (section) {
-      section.scrollIntoView({ behavior: "auto", block: "start" });
-    }
-  }
-
-  showSlideCM(initialSlide);
-  sessionStorage.removeItem("changemakerSlide");
-
-  // Make body visible now that everything is in place
-  document.body.classList.remove("preload");
-});
 </script>
 <footer class="footer">
   <div class="footer-column">

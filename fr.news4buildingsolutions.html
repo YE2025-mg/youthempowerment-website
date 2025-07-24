@@ -10,120 +10,164 @@
   <meta name="author" content="Youth Empowerment Madagascar">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
 
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Poppins', sans-serif;
-      background-color: #1f1f1f;
-      color: #f0f0f0;
-    }
+<style>
+  body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #1f1f1f;
+    color: #f0f0f0;
+  }
+
+  header {
+    background-color: #2a2a2a;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    white-space: nowrap; /* Prevent wrapping in header */
+  }
+
+  .logo-container {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem; /* Space between logo and name */
+  }
+
+  .logo-container img {
+    height: 55px; /* Adjusted for better fit */
+    margin-right: 8px;
+  }
+
+  .logo-container span {
+    font-size: 1.3rem; /* Reduced size for single-line fit */
+    font-weight: 700;
+    color: #ffffff;
+  }
+
+  .language-switcher {
+    display: flex;
+    gap: 1rem; /* Space between ENG and FR */
+    align-items: center;
+    font-weight: 600;
+    margin-left: auto;
+    padding-left: 1rem;
+  }
+
+  .language-switcher a {
+    color: #ffffff;
+    text-decoration: underline;
+  }
+
+  .language-switcher span {
+    color: #ffffff;
+  }
+
+  .container {
+    max-width: 900px;
+    margin: auto;
+    padding: 2rem;
+  }
+
+  h1 {
+    text-align: center;
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .carousel {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .slide {
+    display: none;
+  }
+
+  .slide.active {
+    display: block;
+  }
+
+  .slide img {
+    width: 100%;
+    max-height: none;
+    object-fit: contain;
+    border-radius: 12px;
+  }
+
+  .caption {
+    text-align: left;
+    font-weight: bold;
+    margin: 1rem 0 0.5rem;
+    color: #f0f0f0;
+  }
+
+  .description {
+    margin-bottom: 2rem;
+    line-height: 1.8;
+    text-align: justify;
+  }
+
+  .footer-section {
+    background-color: #2a2a2a;
+    color: #f0f0f0;
+    padding: 2rem;
+    text-align: center;
+    border-radius: 12px;
+    margin-top: 2rem;
+  }
+
+  .footer-section a {
+    color: #f39c12;
+    font-weight: bold;
+    text-decoration: none;
+  }
+
+  .share-links {
+    margin-top: 1rem;
+  }
+
+  .carousel-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+  }
+
+  .carousel-buttons button {
+    background-color: #444;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+
+  footer {
+    background-color: #2a2a2a;
+    color: #f0f0f0;
+    text-align: center;
+    padding: 2rem;
+    margin-top: 4rem;
+  }
+
+  @media (max-width: 768px) {
     header {
-      background-color: #2a2a2a;
-      display: flex;
-      align-items: center;
+      padding: 0.8rem 1rem;
       justify-content: space-between;
-      padding: 1rem 2rem;
     }
-    .logo-container {
-      display: flex;
-      align-items: center;
-    }
+
     .logo-container img {
-      height: 60px;
-      margin-right: 10px;
+      height: 38px;
     }
+
     .logo-container span {
-      font-size: 1.5rem;
-      font-weight: 700;
-      color: #ffffff;
+      font-size: 1rem;
     }
-    .container {
-      max-width: 900px;
-      margin: auto;
-      padding: 2rem;
-    }
-    h1 {
-      text-align: center;
-      font-size: 1.8rem;
-      margin-bottom: 1.5rem;
-    }
-    .carousel {
-      position: relative;
-      overflow: hidden;
-    }
-    .slide {
-      display: none;
-    }
-    .slide.active {
-      display: block;
-    }
-    .slide img {
-      width: 100%;
-      max-height: none;
-      object-fit: contain;
-      border-radius: 12px;
-    }
-    .caption {
-      text-align: left;
-      font-weight: bold;
-      margin: 1rem 0 0.5rem;
-      color: #f0f0f0;
-    }
-    .description {
-      margin-bottom: 2rem;
-      line-height: 1.8;
-      text-align: justify;
-    }
-    .footer-section {
-      background-color: #2a2a2a;
-      color: #f0f0f0;
-      padding: 2rem;
-      text-align: center;
-      border-radius: 12px;
-      margin-top: 2rem;
-    }
-    .footer-section a {
-      color: #f39c12;
-      font-weight: bold;
-      text-decoration: none;
-    }
-    .share-links {
-      margin-top: 1rem;
-    }
-    .carousel-buttons {
-      display: flex;
-      justify-content: space-between;
-      margin-bottom: 2rem;
-    }
-    .carousel-buttons button {
-      background-color: #444;
-      color: white;
-      border: none;
-      padding: 0.5rem 1rem;
-      border-radius: 6px;
-      cursor: pointer;
-    }
+
     .language-switcher {
-      display: flex;
       gap: 0.8rem;
-      align-items: center;
-      font-weight: 600;
     }
-    .language-switcher a {
-      color: #ffffff;
-      text-decoration: underline;
-    }
-    .language-switcher span {
-      color: #ffffff;
-    }
-    footer {
-      background-color: #2a2a2a;
-      color: #f0f0f0;
-      text-align: center;
-      padding: 2rem;
-      margin-top: 4rem;
-    }
-  </style>
+  }
+</style>
 </head>
 <body>
 <header>

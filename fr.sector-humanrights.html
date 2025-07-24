@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Droits de l'Homme et Engagement Civique | Youth Empowerment Madagascar</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+<style>
+  * {
+    box-sizing: border-box;
+  }
+  body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #1f1f1f;
+    color: #f0f0f0;
+    overflow-x: hidden;
+  }
+  header {
+    background-color: #2a2a2a;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 1.5rem;
+    white-space: nowrap; /* Prevent wrapping */
+  }
+  .logo-container {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    text-decoration: none;
+  }
+  .logo-container img {
+    height: 38px; /* Slightly smaller logo */
+  }
+  .logo-container span {
+    font-size: 1.1rem; /* Smaller font size to fit in one line */
+    font-weight: bold;
+    color: #fff;
+  }
+  .language-switcher {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    font-weight: 600;
+    margin-left: auto;
+    padding-left: 1rem;
+  }
+  .language-switcher a {
+    color: #ffffff;
+    text-decoration: underline;
+  }
+  .language-switcher span {
+    color: #ffffff;
+  }
+  h2 {
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 2rem;
+  }
+  .changemakers-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    justify-items: center;
+    padding: 0 1rem;
+  }
+  .changemaker {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: inherit;
+    text-align: center;
+  }
+  .changemaker img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 4px solid #f0f0f0;
+    object-fit: cover;
+    transition: transform 0.3s;
+    margin-bottom: 1rem;
+  }
+  .changemaker:hover img {
+    transform: scale(1.05);
+  }
+  .changemaker p {
+    margin-top: 0.5rem;
+    font-size: 1rem;
+    text-align: center;
+    color: #111111;
+  }
+  footer {
+    background-color: #2a2a2a;
+    color: #f0f0f0;
+    text-align: center;
+    padding: 2rem;
+    margin-top: 3rem;
+  }
+  @media (max-width: 768px) {
+    .changemakers-grid {
+      grid-template-columns: repeat(2, minmax(150px, 1fr));
+      gap: 1.5rem 1rem;
+    }
+    .changemaker p {
+      font-size: 0.72rem;
+      line-height: 1.3;
+    }
+    .logo-container img {
+      height: 32px;
+    }
+    .logo-container span {
+      font-size: 1rem; /* Slightly smaller on mobile */
+    }
+    .language-switcher {
+      padding-left: 0.5rem;
+    }
+  }
+</style>
+
+</head>
+<body>
+<header>
+  <a href="index.html" class="logo-container" style="text-decoration: none;">
+    <img src="logo.png" alt="Logo Youth Empowerment" />
+    <span>Youth Empowerment</span>
+  </a>
+  <div class="language-switcher" style="margin-left: auto; font-weight: 600; display: flex; gap: 0.8rem;">
+    <a href="sector-humanrights.html" lang="en" style="color: #ffffff; text-decoration: underline;">ENG</a>
+    <span style="color: #ffffff;">|</span>
+    <a href="fr.sector-humanrights.html" lang="fr" style="color: #ffffff; text-decoration: underline;">FR</a>
+  </div>
+</header>
+
+<section style="background-color: #ccc5b9; border-radius: 12px; padding: 2rem; max-width: 1200px; margin: 60px auto;">
+  <h2 style="color: #1f1f1f; font-size: 2.5rem; font-weight: 800;">Droits de l'Homme et Engagement Civique</h2>
+  <p style="text-align: center; color: #111111; max-width: 850px; margin: 0 auto 1.5rem; font-size: 1rem;">
+    <i>Découvrez nos changemakers dans le domaine des Droits de l'Homme et de l'Engagement Civique. Cliquez sur leur image pour en savoir plus sur leur parcours.</i>
+  </p>
+
+  <div class="changemakers-grid">
+    <a href="milanto.html" onclick="setSlideBeforeLeave(3)" class="changemaker" style="display: flex; flex-direction: column; align-items: center; margin-top: 40px;">
+      <img src="milanto.webp" alt="Andriniavo Tefiharizaka Milanto"
+        style="width: 150px; height: 150px; border-radius: 50%; border: 4px solid #f0f0f0; object-fit: cover; object-position: top center; margin-bottom: 1rem;">
+      <p style="color: #111111; text-align: center;">ANDRINIAVO<br>TEFIHARIZAKA MILANTO</p>
+    </a>
+
+    <a href="diera.html" onclick="setSlideBeforeLeave(3)" class="changemaker" style="display: flex; flex-direction: column; align-items: center; margin-top: 40px;">
+      <img src="changemaker2.webp" alt="DIERA RAKOTOMALALA"
+        style="width: 150px; height: 150px; border-radius: 50%; border: 4px solid #f0f0f0; object-fit: cover; object-position: center 30%; margin-bottom: 1rem;">
+      <p style="color: #111111; text-align: center;">DIERA<br>RAKOTOMALALA OLINIVO</p>
+    </a>
+
+    <a href="lara.html" onclick="setSlideBeforeLeave(3)" class="changemaker" style="display: flex; flex-direction: column; align-items: center; margin-top: 40px;">
+      <img src="changemaker8.webp" alt="KONG MOULEE Lara Tinah RAHARIVONY"
+        style="width: 150px; height: 150px; border-radius: 50%; border: 4px solid #f0f0f0; object-fit: cover; object-position: top center; margin-bottom: 1rem;">
+      <p style="color: #111111; text-align: center;">KONG MOULEE LARA TINAH RAHARIVONY</p>
+    </a>
+
+    <a href="oliva.html" onclick="setSlideBeforeLeave(3)" class="changemaker" style="display: flex; flex-direction: column; align-items: center; margin-top: 40px;">
+      <img src="oliva.webp" alt="Rafenomanantsoa Oliva Sarindra"
+        style="width: 150px; height: 150px; border-radius: 50%; border: 4px solid #f0f0f0; object-fit: cover; object-position: top center; margin-bottom: 1rem;">
+      <p style="color: #111111; text-align: center;">RAFENOMANANTSOA<br>OLIVA SARINDRA</p>
+    </a>
+
+    <a href="miora.html" onclick="setSlideBeforeLeave(3)" class="changemaker" style="display: flex; flex-direction: column; align-items: center; margin-top: 40px;">
+      <img src="miora.webp" alt="RAJERIHARISOA Nomenjanahary Miora"
+        style="width: 150px; height: 150px; border-radius: 50%; border: 4px solid #f0f0f0; object-fit: cover; object-position: top center; margin-bottom: 1rem;">
+      <p style="color: #111111; text-align: center;">RAJERIHARISOA<br>NOMENJANAHARY MIORA</p>
+    </a>
+
+    <a href="mirantsoa-mireille.html" onclick="setSlideBeforeLeave(3)" class="changemaker" style="display: flex; flex-direction: column; align-items: center; margin-top: 40px;">
+      <img src="mirantsoa-mireille.webp" alt="RAKOTOMALALA Mirantsoa Mireille"
+        style="width: 150px; height: 150px; border-radius: 50%; border: 4px solid #f0f0f0; object-fit: cover; object-position: top center; margin-bottom: 1rem;">
+      <p style="color: #111111; text-align: center;">RAKOTOMALALA<br>MIRANTSOA MIREILLE</p>
+    </a>
+
+    <a href="mirantsoa.html" onclick="setSlideBeforeLeave(3)" class="changemaker" style="display: flex; flex-direction: column; align-items: center; margin-top: 40px;">
+      <img src="mirantsoa.webp" alt="RAKOTONINDRINA Marie Mirantsoa"
+        style="width: 150px; height: 150px; border-radius: 50%; border: 4px solid #f0f0f0; object-fit: cover; object-position: top center; margin-bottom: 1rem;">
+      <p style="color: #111111; text-align: center;">RAKOTONINDRINA<br>MARIE MIRANTSOA</p>
+    </a>
+
+    <a href="tahiry.html" onclick="setSlideBeforeLeave(3)" class="changemaker" style="display: flex; flex-direction: column; align-items: center; margin-top: 40px;">
+      <img src="tahiry.webp" alt="Razafindravelo Maminirina Tahiry"
+        style="width: 150px; height: 150px; border-radius: 50%; border: 4px solid #f0f0f0; object-fit: cover; object-position: top center; margin-bottom: 1rem;">
+      <p style="color: #111111; text-align: center;">RAZAFINDRAVELO<br>MAMINIRINA TAHIRY</p>
+    </a>
+  </div>
+</section>
+
+<footer>
+  <p>&copy; 2025 Youth Empowerment Madagascar. Tous droits réservés.</p>
+</footer>
+</body>
+</html>

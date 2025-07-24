@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Changements Climatiques, Environnement et Agriculture | Youth Empowerment Madagascar</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+<style>
+  * {
+    box-sizing: border-box;
+  }
+  body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #1f1f1f;
+    color: #f0f0f0;
+    overflow-x: hidden;
+  }
+  header {
+    background-color: #2a2a2a;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 1.5rem;
+    white-space: nowrap; /* Prevent wrapping */
+  }
+  .logo-container {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    text-decoration: none;
+  }
+  .logo-container img {
+    height: 38px; /* Slightly smaller logo */
+  }
+  .logo-container span {
+    font-size: 1.1rem; /* Smaller font size to fit in one line */
+    font-weight: bold;
+    color: #fff;
+  }
+  .language-switcher {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    font-weight: 600;
+    margin-left: auto;
+    padding-left: 1rem;
+  }
+  .language-switcher a {
+    color: #ffffff;
+    text-decoration: underline;
+  }
+  .language-switcher span {
+    color: #ffffff;
+  }
+  h2 {
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 2rem;
+  }
+  .changemakers-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    justify-items: center;
+    padding: 0 1rem;
+  }
+  .changemaker {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: inherit;
+    text-align: center;
+  }
+  .changemaker img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 4px solid #f0f0f0;
+    object-fit: cover;
+    transition: transform 0.3s;
+    margin-bottom: 1rem;
+  }
+  .changemaker:hover img {
+    transform: scale(1.05);
+  }
+  .changemaker p {
+    margin-top: 0.5rem;
+    font-size: 1rem;
+    text-align: center;
+    color: #111111;
+  }
+  footer {
+    background-color: #2a2a2a;
+    color: #f0f0f0;
+    text-align: center;
+    padding: 2rem;
+    margin-top: 3rem;
+  }
+  @media (max-width: 768px) {
+    .changemakers-grid {
+      grid-template-columns: repeat(2, minmax(150px, 1fr));
+      gap: 1.5rem 1rem;
+    }
+    .changemaker p {
+      font-size: 0.72rem;
+      line-height: 1.3;
+    }
+    .logo-container img {
+      height: 32px;
+    }
+    .logo-container span {
+      font-size: 1rem; /* Slightly smaller on mobile */
+    }
+    .language-switcher {
+      padding-left: 0.5rem;
+    }
+  }
+</style>
+
+</head>
+<body>
+<header>
+  <a href="index.html" class="logo-container" style="text-decoration: none;">
+    <img src="logo.png" alt="Logo Youth Empowerment" />
+    <span>Youth Empowerment</span>
+  </a>
+  <div class="language-switcher" style="margin-left: auto; font-weight: 600; display: flex; gap: 0.8rem;">
+    <a href="sector-climate.html" lang="en" style="color: #ffffff; text-decoration: underline;">ENG</a>
+    <span style="color: #ffffff;">|</span>
+    <a href="fr.sector-climate.html" lang="fr" style="color: #ffffff; text-decoration: underline;">FR</a>
+  </div>
+</header>
+<section style="background-color: #ccc5b9; border-radius: 12px; padding: 2rem; max-width: 1200px; margin: 60px auto;">
+  <h2 style="color: #1f1f1f; font-size: 2.5rem; font-weight: 800;">Changements Climatiques, Environnement et Agriculture</h2>
+  <p style="text-align: center; color: #111111; max-width: 850px; margin: 0 auto 1.5rem; font-size: 1rem;">
+    <i>Découvrez nos changemakers dans le secteur des Changements Climatiques, de l’Environnement et de l’Agriculture. Cliquez sur leur image pour en savoir plus sur leur parcours.</i>
+  </p>
+
+  <div class="changemakers-grid">
+    <a href="avotriniaina.html#slide=1" onclick="setSlideBeforeLeave(1)" class="changemaker" style="display: flex; flex-direction: column; align-items: center;">
+      <img src="avotriniaina.webp" alt="AVOTRINIAINA RATINARISOA" style="width: 150px; height: 150px; border-radius: 50%; border: 4px solid #f0f0f0; object-fit: cover; object-position: top center; margin-bottom: 1rem;">
+      <p style="color: #111111; text-align: center;">AVOTRINIAINA<br>RATINARISOA</p>
+    </a>
+
+    <a href="elianah.html#slide=1" onclick="setSlideBeforeLeave(1)" class="changemaker" style="display: flex; flex-direction: column; align-items: center;">
+      <img src="changemaker4.webp" alt="ELIANAH RAHARINIRINA" style="width: 150px; height: 150px; border-radius: 50%; border: 4px solid #f0f0f0; object-fit: cover; margin-bottom: 1rem;">
+      <p style="color: #111111; text-align: center;">ELIANAH<br>RAHARINIRINA</p>
+    </a>
+
+    <a href="henintsoa.html?slide=1" onclick="setSlideBeforeLeave(1)" class="changemaker" style="display: flex; flex-direction: column; align-items: center;">
+      <img src="henintsoa.webp" alt="HENINTSOA ANJATIANA RATOVONIAINA" style="width: 150px; height: 150px; border-radius: 50%; border: 4px solid #f0f0f0; object-fit: cover; margin-bottom: 1rem;">
+      <p style="color: #111111; text-align: center;">HENINTSOA<br>ANJATIANA RATOVONIAINA</p>
+    </a>
+
+    <a href="jonathan.html?slide=1" onclick="setSlideBeforeLeave(1)" class="changemaker" style="display: flex; flex-direction: column; align-items: center;">
+      <img src="changemaker6.webp" alt="JONATHAN RAMIARAMANANA" style="width: 150px; height: 150px; border-radius: 50%; border: 4px solid #f0f0f0; object-fit: cover; object-position: center top; margin-bottom: 1rem;">
+      <p style="color: #111111; text-align: center;">JONATHAN<br>RAMIARAMANANA</p>
+    </a>
+
+    <a href="nancia.html?slide=1" onclick="setSlideBeforeLeave(1)" class="changemaker" style="display: flex; flex-direction: column; align-items: center;">
+      <img src="changemaker7.webp" alt="LALAINA NANCIA RANOMENJANAHARY" style="width: 150px; height: 150px; border-radius: 50%; border: 4px solid #f0f0f0; object-fit: cover; margin-bottom: 1rem;">
+      <p style="color: #111111; text-align: center;">LALAINA NANCIA<br>RANOMENJANAHARY</p>
+    </a>
+
+    <a href="nasaina.html?slide=1" onclick="setSlideBeforeLeave(1)" class="changemaker" style="display: flex; flex-direction: column; align-items: center;">
+      <img src="nasaina.webp" alt="NASAINA ANDRIANJARISOA" style="width: 150px; height: 150px; border-radius: 50%; border: 4px solid #f0f0f0; object-fit: cover; margin-bottom: 1rem; object-position: top center;">
+      <p style="color: #111111; text-align: center;">NASAINA<br>ANDRIANJARISOA</p>
+    </a>
+
+    <a href="nomena.html?slide=1" onclick="setSlideBeforeLeave(1)" class="changemaker" style="display: flex; flex-direction: column; align-items: center;">
+      <img src="changemaker5.webp" alt="NOMENA RANDRIAMANGA HENINTSOA" style="width: 150px; height: 150px; border-radius: 50%; border: 4px solid #f0f0f0; object-fit: cover; margin-bottom: 1rem;">
+      <p style="color: #111111; text-align: center;">NOMENA<br>RANDRIAMANGA HENINTSOA</p>
+    </a>
+
+    <a href="sonia.html?slide=1" onclick="setSlideBeforeLeave(1)" class="changemaker" style="display: flex; flex-direction: column; align-items: center;">
+      <img src="sonia.webp" alt="ONJATAHIANA SONÏA" style="width: 150px; height: 150px; border-radius: 50%; border: 4px solid #f0f0f0; object-fit: cover; margin-bottom: 1rem;">
+      <p style="color: #111111; text-align: center;">ONJATAHIANA<br>SONÏA</p>
+    </a>
+
+    <a href="raphaelito.html?slide=1" onclick="setSlideBeforeLeave(1)" class="changemaker" style="display: flex; flex-direction: column; align-items: center; margin-top: 40px;">
+      <img src="raphaelito.webp" alt="RAPHAELITO LANDRY RANDRIANIAINA AMBININTSOA" style="width: 150px; height: 150px; border-radius: 50%; border: 4px solid #f0f0f0; object-fit: cover; object-position: top center; margin-bottom: 1rem;">
+      <p style="color: #111111; text-align: center;">RAPHAELITO<br>LANDRY RANDRIANIAINA AMBININTSOA</p>
+    </a>
+
+    <a href="elisabelle.html?slide=1" onclick="setSlideBeforeLeave(1)" class="changemaker" style="display: flex; flex-direction: column; align-items: center; margin-top: 40px;">
+      <img src="elisabelle.webp" alt="RASOANANDRASANA Andriniaina Marie Elisabelle" style="width: 150px; height: 150px; border-radius: 50%; border: 4px solid #ffffff; object-fit: cover; object-position: top center; margin-bottom: 1rem;">
+      <p style="color: #111111; text-align: center;">RASOANANDRASANA<br>ANDRINIAINA MARIE ELISABELLE</p>
+    </a>
+
+    <a href="solofoniana.html?slide=1" onclick="setSlideBeforeLeave(1)" class="changemaker" style="display: flex; flex-direction: column; align-items: center; margin-top: 40px;">
+      <img src="solofoniana.webp" alt="SOLOFONIANA NANTENAINA PAUL ANDRIATAHIANA" style="width: 150px; height: 150px; border-radius: 50%; border: 4px solid #f0f0f0; object-fit: cover; margin-bottom: 1rem;">
+      <p style="color: #111111; text-align: center;">SOLOFONIANA<br>NANTENAINA PAUL ANDRIATAHIANA</p>
+    </a>
+
+    <a href="steniah.html?slide=1" onclick="setSlideBeforeLeave(1)" class="changemaker" style="display: flex; flex-direction: column; align-items: center; margin-top: 40px;">
+      <img src="steniah.webp" alt="STENIAH RAMAHEFANIRINA NAMBININTSOA" style="width: 150px; height: 150px; border-radius: 50%; border: 4px solid #f0f0f0; object-fit: cover; object-position: top center; margin-bottom: 1rem;">
+      <p style="color: #111111; text-align: center;">STENIAH<br>RAMAHEFANIRINA NAMBININTSOA</p>
+    </a>
+
+    <a href="tatianah.html?slide=1" onclick="setSlideBeforeLeave(1)" class="changemaker" style="display: flex; flex-direction: column; align-items: center; margin-top: 40px;">
+      <img src="tatianah.webp" alt="TATIANAH HANITRINIAINA" style="width: 150px; height: 150px; border-radius: 50%; border: 4px solid #f0f0f0; object-fit: cover; object-position: top center; margin-bottom: 1rem;">
+      <p style="color: #111111; text-align: center;">TATIANAH<br>HANITRINIAINA</p>
+    </a>
+
+    <a href="tojonirina.html?slide=1" onclick="setSlideBeforeLeave(1)" class="changemaker" style="display: flex; flex-direction: column; align-items: center; margin-top: 40px;">
+      <img src="tojonirina.webp" alt="TOJONIRINA RANDRIAMALALA" style="width: 150px; height: 150px; border-radius: 50%; border: 4px solid #f0f0f0; object-fit: cover; object-position: top center; margin-bottom: 1rem;">
+      <p style="color: #111111; text-align: center;">TOJONIRINA<br>RANDRIAMALALA</p>
+    </a>
+  </div>
+</section>
+
+<footer>
+  <p>&copy; 2025 Youth Empowerment Madagascar. Tous droits réservés.</p>
+</footer>
+</body>
+</html>
