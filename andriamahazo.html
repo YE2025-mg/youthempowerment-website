@@ -11,143 +11,145 @@
   <meta name="author" content="Youth Empowerment Madagascar" />
 
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet" />
+<style>
+  body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #1f1f1f;
+    color: #f0f0f0;
+    line-height: 1.6;
+  }
 
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Poppins', sans-serif;
-      background-color: #1f1f1f;
-      color: #f0f0f0;
-      line-height: 1.6;
-    }
+  header {
+    background-color: #2a2a2a;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    white-space: nowrap; 
+  }
 
+  .logo-container {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    gap: 0.4rem; 
+  }
+
+  .logo-container img {
+    height: 55px;
+    margin-right: 8px;
+  }
+
+  .logo-container span {
+    font-size: 1.3rem; 
+    font-weight: 700;
+    color: #ffffff;
+  }
+
+  .language-switcher {
+    display: flex;
+    gap: 1rem; 
+    align-items: center;
+    font-weight: 600;
+    margin-left: auto; 
+    padding-left: 1rem;
+  }
+
+  .language-switcher a {
+    color: #ffffff;
+    text-decoration: underline;
+  }
+
+  .language-switcher span {
+    color: #ffffff;
+  }
+
+  .profile-container {
+    max-width: 900px;
+    margin: 60px auto;
+    padding: 0 20px;
+  }
+
+  .profile-header {
+    text-align: center;
+  }
+
+  .profile-header img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1rem;
+    border: 4px solid #f0f0f0;
+  }
+
+  .profile-header h1 {
+    font-size: 1.8rem;
+    color: #ffffff;
+    margin-bottom: 0.5rem;
+    line-height: 1.4;
+  }
+
+  .profile-header h3 {
+    font-weight: 400;
+    color: #f0f0f0;
+  }
+
+  .profile-content p {
+    margin-bottom: 1.2rem;
+    text-align: justify;
+    color: #e0e0e0;
+    font-size: 1rem;
+  }
+
+  footer {
+    background-color: #2a2a2a;
+    color: #f0f0f0;
+    text-align: center;
+    padding: 2rem;
+    margin-top: 4rem;
+  }
+
+  @media (max-width: 768px) {
     header {
-      background-color: #2a2a2a;
-      display: flex;
-      align-items: center;
+      padding: 0.8rem 1rem;
+      flex-direction: row;
       justify-content: space-between;
-      padding: 1rem 2rem;
-    }
-
-    .logo-container {
-      display: flex;
-      align-items: center;
-      text-decoration: none;
     }
 
     .logo-container img {
-      height: 60px;
-      margin-right: 10px;
+      height: 38px;
+      margin-right: 6px;
     }
 
     .logo-container span {
-      font-size: 1.5rem;
-      font-weight: 700;
-      color: #ffffff;
+      font-size: 1.05rem;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
     }
 
     .language-switcher {
-      display: flex;
       gap: 0.8rem;
-      align-items: center;
-      font-weight: 600;
-    }
-
-    .language-switcher a {
-      color: #ffffff;
-      text-decoration: underline;
-    }
-
-    .language-switcher span {
-      color: #ffffff;
-    }
-
-    .profile-container {
-      max-width: 900px;
-      margin: 60px auto;
-      padding: 0 20px;
-    }
-
-    .profile-header {
-      text-align: center;
     }
 
     .profile-header img {
-      width: 200px;
-      height: 200px;
-      border-radius: 50%;
-      object-fit: cover;
-      margin-bottom: 1rem;
-      border: 4px solid #f0f0f0;
+      width: 150px;
+      height: 150px;
     }
 
     .profile-header h1 {
-      font-size: 1.8rem;
-      color: #ffffff;
-      margin-bottom: 0.5rem;
-      line-height: 1.4;
-    }
-
-    .profile-header h3 {
-      font-weight: 400;
-      color: #f0f0f0;
+      font-size: 1.4rem;
+      padding: 0 1rem;
     }
 
     .profile-content p {
-      margin-bottom: 1.2rem;
-      text-align: justify;
-      color: #e0e0e0;
-      font-size: 1rem;
+      font-size: 0.95rem;
     }
+  }
+</style>
 
-    footer {
-      background-color: #2a2a2a;
-      color: #f0f0f0;
-      text-align: center;
-      padding: 2rem;
-      margin-top: 4rem;
-    }
-
-    @media (max-width: 768px) {
-      header {
-        padding: 0.8rem 1rem;
-        flex-direction: row;
-        justify-content: flex-start;
-      }
-
-      .logo-container {
-        display: flex;
-        align-items: center;
-        gap: 0.4rem;
-      }
-
-      .logo-container img {
-        height: 40px;
-        margin-right: 8px;
-      }
-
-      .logo-container span {
-        font-size: 1.1rem;
-        white-space: nowrap;
-        overflow: hidden;
-        text-overflow: ellipsis;
-      }
-
-      .profile-header img {
-        width: 150px;
-        height: 150px;
-      }
-
-      .profile-header h1 {
-        font-size: 1.4rem;
-        padding: 0 1rem;
-      }
-
-      .profile-content p {
-        font-size: 0.95rem;
-      }
-    }
-  </style>
 </head>
 <body>
 
