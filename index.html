@@ -601,6 +601,30 @@ header {
   padding-right: 1rem; 
 }
 }
+.language-switcher {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-left: 0.5rem;
+}
+
+.language-switcher img {
+  width: 26px;
+  height: auto;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.language-switcher img:hover {
+  transform: scale(1.1);
+}
+
+.language-switcher span {
+  color: #fff;
+  font-weight: bold;
+}
+
 </style>
 
 
@@ -646,16 +670,15 @@ header {
     <div class="nav-item"><a href="contact.html">Contact</a></div>
     <div class="nav-item"><a href="donate.html" class="donate-btn">Donate</a></div>
 
-    <div class="language-switcher" style="display: flex; gap: 0.8rem; font-weight: 600; margin-left: auto;">
-    <a href="index.html" lang="en">
-      <img src="uk-flag.png" alt="English" style="width:24px; vertical-align:middle; border-bottom: 2px solid #ffffff;" />
-    </a>
-    <span style="color: #ffffff;">|</span>
-    <a href="fr.index.html" lang="fr">
-      <img src="france-flag.png" alt="Français" style="width:24px; vertical-align:middle; border-bottom: 2px solid #ffffff;" />
-    </a>
+    <div class="language-switcher">
+      <a href="index.html" lang="en">
+        <img src="uk-flag.png" alt="English" />
+      </a>
+      <span>|</span>
+      <a href="fr.index.html" lang="fr">
+        <img src="france-flag.png" alt="Français" />
+      </a>
     </div>
-  </nav>
 </header>
 
 <section class="hero">
